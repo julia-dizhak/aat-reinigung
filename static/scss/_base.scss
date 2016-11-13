@@ -9,10 +9,12 @@ body {
 a {
   &:link {
     text-decoration: none;
+    color: #fff;
   }
   &:visited {
     //color: $color-default;
     text-decoration: underline;
+    color: #fff;
   }
   &:hover {
     text-decoration: underline;

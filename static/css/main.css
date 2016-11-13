@@ -19,10 +19,12 @@ body {
   padding: 0; }
 
 a:link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 a:visited {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #fff; }
 
 a:hover {
   text-decoration: underline; }
