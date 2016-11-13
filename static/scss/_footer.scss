@@ -1,0 +1,71 @@
+.location {
+  padding: $margin-separated 0 $margin-separated*4;
+  background-color: $main-backgound;
+  color: #fff;
+
+  .article-title {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .map {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    max-width: 450px;
+    @include respond-to(mobile) {
+      max-width: inherit;
+    }
+    img {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+  h4 {
+    font-weight: 200;
+    font-size: 1.1em;
+  }
+  #baden {
+    position: absolute;
+    left: 40%;
+    top: 20px;
+  }
+  #zurich {
+    position: absolute;
+    left: 54%;
+    top: 40px;
+  }
+  #aarau {
+    position: absolute;
+    left: 37%;
+    top: 54px;
+  }
+  #luzern {
+    position: absolute;
+    left: 48%;
+    top: 85px;
+  }
+}
+
+footer {
+  background-color: $main-backgound;
+  padding: $margin-separated 0 $margin-separated*2;
+  color: #fff;
+
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 $margin-separated*2 0 0;
+    @include respond-to(phone) {
+      margin: 0;
+    }
+  }
+  .copyright {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.9em;
+    @include respond-to(phone) {
+      font-size: 0.85em;
+    }
+  }
+}

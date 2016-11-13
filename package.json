@@ -1,0 +1,15 @@
+{
+  "name": "aat-reinigung",
+  "version": "1.0.0",
+  "description": "levak",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julia Dizhak",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^3.11.3",
+    "sprity": "^1.0.8"
+  }
+}

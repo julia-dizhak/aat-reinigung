@@ -1,0 +1,144 @@
+.head {
+  text-align: center;
+  color: #fff;
+  background-color: $main-backgound;
+  background:  url('../images/main-background.jpg') repeat-x center top;
+  padding: 90px 0;
+  @include respond-to(mobile) {
+    padding: 45px 0;
+  }
+  .logo {
+    display: block;
+  }
+}
+
+.logo {
+  &:hover {
+    text-decoration: none;
+  }
+  img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+
+.menu {
+  margin: 60px 0 0 0;
+  padding: 0;
+  .main-title {
+    text-align: left;
+    margin: 0 0 $margin-separated*2 0;
+  }
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+  @include clearfix;
+  .title {
+    font-size: 1.1em;
+    margin: 0;
+  }
+  li {
+    float: left;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: $border-radius;
+    padding: 0 10px;
+    text-align: center;
+    width: 29%;
+    box-sizing: border-box;
+    margin-bottom: $margin-separated*2;
+    background: $main-backgound;
+    &:first-child {
+      .item {
+         &:before {
+           @extend .icon;
+           @include sprite($chair);
+         }
+      }
+    }
+    &:nth-child(2) {
+      .item {
+        &:before {
+           @extend .icon;
+           @include sprite($window);
+        }
+      }
+    }
+    &:nth-child(3) {
+      .item {
+        &:before {
+           @extend .icon;
+           @include sprite($stairs);
+        }
+      }
+    }
+    &:nth-child(4) {
+      .item {
+        &:before {
+           @extend .icon;
+           @include sprite($sofa);
+        }
+      }
+    }
+    &:nth-child(5) {
+      .item {
+        &:before {
+           @extend .icon;
+           @include sprite($door);
+        }
+      }
+    }
+    &:nth-child(6) {
+      .item {
+        &:before {
+           @extend .icon;
+           @include sprite($house);
+        }
+      }
+    }
+    &:nth-child(3n-1) {
+      margin-left: 6.5%;
+      margin-right: 6.5%;
+    }
+    //@include respond-to(screen) {
+    //
+    //}
+    //@include respond-to(tablet) {
+    //
+    //}
+    @include respond-to(mobile) {
+      width: 100%;
+      float: none;
+
+      &:nth-child(3n-1) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .item {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 25px 20px 25px 40px;
+      &:visited {
+        color: #fff;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:before {
+         position: absolute;
+         content: "";
+         top: 50%;
+         left: 0;
+         transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+}

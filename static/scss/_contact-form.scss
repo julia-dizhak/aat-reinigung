@@ -1,0 +1,100 @@
+#contact-us {
+  margin: $margin-separated*4 0;
+  form {
+    margin: 0 60px 0 30px;
+  }
+
+  .custom-input {
+    margin: 0 0 $margin-separated*2 0;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    padding: $margin-separated 30px;
+  }
+
+
+  .description {
+    p {
+      font-size: 0.95em;
+      line-height: 1.4;
+      margin: 0 0 $margin-separated*2 0;
+      padding: 0;
+    }
+  }
+}
+
+.custom-input {
+  font-size: 1.1em;
+  font-weight: 100;
+  border-radius: 3px;
+  display: block;
+  padding: 20px 15px;
+  border: 1px solid #c2c2c2;
+  width: 100%;
+  box-sizing: border-box;
+
+
+  &:hover {
+    //border: 1px solid $main-backgound;
+  }
+
+  &.placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &::-webkit-input-placeholder,
+  &::-ms-input-placeholder {
+    color: $color-default;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder {
+      color: transparent;
+      //border: 1px solid $main-backgound;
+    }
+  }
+  &:focus {
+    &:-moz-placeholder {
+      color: transparent;
+      //border: 1px solid $main-backgound;
+    }
+  }
+  &:focus {
+    &::-moz-placeholder {
+      color: transparent;
+      //border: 1px solid $main-backgound;
+    }
+  }
+  &:focus {
+    &:-ms-input-placeholder {
+      color: transparent;
+      //border: 1px solid $main-backgound;
+    }
+  }
+}
+
+
+.info {
+  margin: $margin-separated*2 0 0 0;
+  .tel,
+  .email {
+    color: $main-backgound;
+    font-weight: 200;
+    display: block;
+    margin-bottom: $margin-separated;
+    //&:hover {
+    //  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    //}
+  }
+  .tel {
+    font-size: 1.3em;
+    position: relative;
+    padding: 100px 0 0 0;
+    background:  url('../images/phone.png') no-repeat left top;
+  }
+  .email {
+    font-size: 1.2em;
+  }
+}
