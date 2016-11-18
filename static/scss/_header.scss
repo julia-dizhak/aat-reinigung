@@ -1,11 +1,13 @@
 .head {
   text-align: center;
   color: #fff;
-  background-color: $main-backgound;
-  background:  url('../images/main-background.jpg') repeat-x center top;
-  padding: 90px 0;
-  @include respond-to(mobile) {
+  background: $main-backgound url('../images/main-background.jpg') repeat-x center top;
+  padding: 20px 0 90px;
+  @include respond-to(tablet) {
     padding: 45px 0;
+  }
+  @include respond-to(mobile) {
+    padding: 30px 0;
   }
   .logo {
     display: block;
@@ -13,6 +15,8 @@
 }
 
 .logo {
+  @include clearfix;
+  margin: 70px 0 0 0;
   &:hover {
     text-decoration: none;
   }
@@ -20,6 +24,13 @@
     display: inline-block;
     vertical-align: bottom;
   }
+}
+
+.language {
+  //float: right;
+  text-decoration: underline;
+  //clear: right;
+  text-align: right;
 }
 
 
@@ -36,10 +47,16 @@
   list-style: none;
   margin: 0 0 40px 0;
   padding: 0;
+  @include respond-to(tablet) {
+    margin: 0;
+  }
   @include clearfix;
   .title {
     font-size: 1.1em;
     margin: 0;
+    @include respond-to(tablet) {
+      font-size: 1em;
+    }
   }
   li {
     float: left;
@@ -52,6 +69,9 @@
     box-sizing: border-box;
     margin-bottom: $margin-separated*2;
     background: $main-backgound;
+    @include respond-to(tablet) {
+      padding: 0;
+    }
     &:first-child {
       .item {
          &:before {
@@ -125,6 +145,9 @@
       display: inline-block;
       vertical-align: middle;
       padding: 25px 20px 25px 40px;
+      @include respond-to(tablet) {
+        padding-right: 0;
+      }
       &:visited {
         color: #fff;
       }

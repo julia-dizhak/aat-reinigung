@@ -1,15 +1,15 @@
-$sofa: -0px -0px 50px 33px;
-$sofa-blue: -0px -33px 61px 40px;
-$window: -0px -73px 47px 41px;
-$door: -0px -114px 44px 44px;
-$chair: -0px -158px 39px 48px;
-$door-blue: -0px -206px 49px 49px;
-$stairs: -0px -255px 50px 50px;
-$house: -0px -305px 47px 52px;
-$window-blue: -0px -357px 60px 52px;
-$stairs-blue: -0px -409px 56px 56px;
-$house-blue: -0px -465px 51px 57px;
-$chair-blue: -0px -522px 50px 62px;
+$sofa: -0px -0px 47px 31px;
+$window: -0px -31px 44px 38px;
+$sofa-blue: -0px -69px 61px 40px;
+$door: -0px -109px 44px 44px;
+$chair: -0px -153px 39px 48px;
+$door-blue: -0px -201px 49px 49px;
+$stairs: -0px -250px 50px 50px;
+$house: -0px -300px 47px 52px;
+$window-blue: -0px -352px 60px 52px;
+$stairs-blue: -0px -404px 56px 56px;
+$house-blue: -0px -460px 51px 57px;
+$chair-blue: -0px -517px 50px 62px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -42,12 +42,12 @@ $chair-blue: -0px -522px 50px 62px;
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
   .icon {
     background-image: url('../sprites_gen/sprite@1.5x.png');
-    background-size: 61px 583px;
+    background-size: 61px 578px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .icon {
     background-image: url('../sprites_gen/sprite@2x.png');
-    background-size: 61px 583px;
+    background-size: 61px 579px;
   }
 }

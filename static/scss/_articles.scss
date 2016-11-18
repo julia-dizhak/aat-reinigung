@@ -11,12 +11,21 @@
     position: relative;
     padding: 0 0 0 130px;
     margin: 0 0 ($margin-separated*2)+10 0;
+    @include respond-to(mobile) {
+      padding: 55px 0 0 0;
+      text-align: center;
+    }
     &:before {
       position: absolute;
       content: "";
       top: 50%;
       left: 10px;
       transform: translateX(50%) translateY(-50%);
+      @include respond-to(mobile) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+      }
     }
 
     .description {
@@ -84,7 +93,18 @@
   @include clearfix;
   .picture {
     float: left;
+    width: 20%;
+    height: 154px;
+    @include respond-to(mobile) {
+      width: 50%;
+      //height: inherit;
+    }
   }
+}
+
+.gallery-item {
+  display: block;
+  cursor: pointer;
 }
 
 
@@ -116,6 +136,9 @@
 .about-us {
   article {
     margin: 0 0 0 30px;
+    @include respond-to(mobile) {
+      margin: 0;
+    }
   }
   header {
     font-size: 1.1em;
