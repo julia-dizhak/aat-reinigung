@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Aat Reinigung</title>
+    <title>{{ _('Aat Reinigung') }}</title>
 
     <meta name="author" content="">
     <meta name="description" content="">
@@ -19,10 +19,15 @@
     <header class="head">
     <div class="wrapper">
         <div class="language">
-            <div class="selected" language>English</div>
-            <!--<ul class="list">-->
-                <!--<li class="item"><a href="" class="link">German</a></li>-->
-            <!--</ul>-->
+            {% for lang, lang_label in LANGAUGES.iteritems() %}
+                {% if lang == LANGUAGE_CODE %}
+                    <div class="selected" language>{{ lang_label }}</div>
+                {% else %}
+                    <ul class="list">
+                        <li class="item"><a href="/lang/{{ lang }}" class="link">{{ lang_label }}</a></li>
+                    </ul>
+                {% endif %}
+            {% endfor %}
         </div>
         <a href="./" class="logo">
             <img
@@ -30,56 +35,56 @@
                 width="294"
                 height="143"
                 src="static/images/aat-reinigung-logo@2x.png"
-                alt="AAT Reinigung &amp; Hauswartung">
+                alt="{{ _('AAT Reinigung &amp; Hauswartung') }}">
         </a>
         <menu class="menu">
-            <h1 class="main-title">Our Special areas</h1>
+            <h1 class="main-title">{{ _('Our Special areas') }}</h1>
             <ul class="menu-list">
                 <li>
                     <a
                         class="item"
                         href="#office-clean">
-                        <h2 class="title">Office Cleaning</h2>
+                        <h2 class="title">{{ _('Office Cleaning') }}</h2>
                     </a>
                 </li>
                 <li>
                     <a
                         class="item"
                         href="#window-clean">
-                        <h2 class="title">Window Cleaning</h2>
+                        <h2 class="title">{{ _('Window Cleaning') }}</h2>
                     </a>
                 </li>
                 <li>
                     <a
                         class="item"
                         href="#stairs-clean">
-                        <h2 class="title">Stairs cleaning</h2>
+                        <h2 class="title">{{ _('Stairs cleaning') }}</h2>
                     </a>
                 </li>
                 <li>
                     <a
                         class="item"
                         href="#apartment-clean">
-                        <h2 class="title">Apartment cleaning</h2>
+                        <h2 class="title">{{ _('Apartment cleaning') }}</h2>
                     </a>
                 </li>
                 <li>
                     <a
                         class="item"
                         href="#property-clean">
-                        <h2 class="title">Commercial property</h2>
+                        <h2 class="title">{{ _('Commercial property') }}</h2>
                     </a>
                 <li>
                     <a
                         class="item"
                         href="#house-clean">
-                        <h2 class="title">House maintance</h2>
+                        <h2 class="title">{{ _('House maintance') }}</h2>
                     </a>
                 </li>
             </ul>
         </menu>
         <div class="button-container">
-            <a href="#contact-us" class="button">contact us</a>
+            <a href="#contact-us" class="button">{{ _('contact us') }}</a>
         </div>
     </div>
 </header>
@@ -88,10 +93,13 @@
     <div class="wrapper">
         <section id="office-clean">
             <article class="item">
-                <h3 class="article-title">Office Cleaning</h3>
+                <h3 class="article-title">{{ _('Office Cleaning') }}</h3>
                 <div class="description">
+                    {{ _('
                     <p>The office cleaning ...</p>
                     <p>The buro is a place where many people have the largest part of their lives ...</p>
+                    ')
+                    }}
                 </div>
             </article>
             <figure class="gallery">
@@ -134,26 +142,32 @@
         </section>
         <section id="window-clean">
             <article class="item">
-                <h3 class="article-title">Window Cleaning</h3>
+                <h3 class="article-title">{{ _('Window Cleaning') }}</h3>
                 <div class="description">
+                    {{ _('
                     <p>Window Cleaning is also very important ... </p>
                     <p>Window Cleaning is also very important test text ... </p>
+                    ')}}
                 </div>
             </article>
         </section>
         <section id="stairs-clean">
             <article class="item">
-                <h3 class="article-title">Stairs cleaning</h3>
+                <h3 class="article-title">{{ _('Stairs cleaning') }}</h3>
                 <div class="description">
+                    {{ _('
                     <p>Stair houses are also part of our repertoire. We ensure that your stairwell is cleaned in such a way that it leaves a positive impression on customers and business partners.</p>
+                    ') }}
                 </div>
             </article>
         </section>
         <section id="apartment-clean">
             <article class="item">
-                <h3 class="article-title">Apartment cleaning</h3>
+                <h3 class="article-title">{{ _('Apartment cleaning') }}</h3>
                 <div class="description">
+                    {{ _('
                     <p>We clean your private apartment as conscientiously as if it were our own. We are also pleased to meet special requirements by appointment.</p>
+                    ')}}
                 </div>
             </article>
             <figure class="gallery">
@@ -195,18 +209,22 @@
         </section>
         <section id="property-clean">
             <article class="item">
-                <h3 class="article-title">Commercial property</h3>
+                <h3 class="article-title">{{ _('Commercial property') }}</h3>
                 <div class="description">
+                    {{ _('
                     <p>Leave a shining impression with your customers: We bring your sales floor to a high gloss, thus contributing our part to your sales success.</p>
+                    ') }}
                 </div>
             </article>
         </section>
         <section id="house-clean">
             <article class="item">
-                <h3 class="article-title">House maintance</h3>
+                <h3 class="article-title">{{ _('House maintance') }}</h3>
                 <div class="description">
+                    {{ _('
                     <p>We offer a professional house maintenance, which leaves nothing to be desired.</p>
                     <p> For example, we take care of plants and lawns, clean underground garages and also take care of the house technology.</p>
+                    ') }}
                 </div>
             </article>
         </section>
@@ -215,18 +233,20 @@
 
     <section id="contact-us">
         <div class="wrapper">
-            <h3 class="custom-title"><span class="text">Contact us</span></h3>
+            <h3 class="custom-title"><span class="text">{{ _('Contact us') }}</span></h3>
             <div class="row">
                 <div class="col-m6 col-s12 col">
                     <form ng-submit="requestForm.$valid"
                           name="requestForm"
                           novalidate>
                         <div class="description">
+                            {{ _('
                             <p>Have we piqued your interest? We are looking forward to your call
                                 at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
                                 You can also contact us via the contact form below, we will contact you
                                 as soon as possible.
                             </p>
+                            ')}}
                         </div>
 
                         <div>
@@ -234,27 +254,27 @@
                             class="custom-input"
                             type="text"
                             name="name"
-                            placeholder="First Name / Second Name"
+                            placeholder="{{ _('First Name / Second Name') }}"
                             required>
                             <div ng-cloak
                                  class="error"
-                                 ng-show="requestForm.name.$invalid && requestForm.$submitted">This field is required</div>
+                                 ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
                         </div>
 
                         <input
                             class="custom-input"
                             type="email"
                             name="email"
-                            placeholder="e.g. email">
+                            placeholder="{{ _('e.g. email') }}">
                         <input
                             class="custom-input"
                             type="tel"
                             name="tel"
-                            placeholder="e.g. phone number">
+                            placeholder="{{ _('e.g. phone number') }}">
                         <button
                             type="submit"
                             class="button">
-                            Submit
+                            {{ _('Submit') }}
                         </button>
                     </form>
                 </div>
@@ -264,16 +284,16 @@
                         itemprop="LocalBusiness"
                         itemscope
                         itemtype="http://schema.org/Organization">
-                        <p class="text">Call or Email us:</p>
+                        <p class="text">{{ _('Call or Email us:') }}</p>
                         <i class="tel-icon">&nbsp;</i>
                         <a
                             class="tel"
                             itemprop="telephone"
-                            href="tel:+410793775752">079 377 57 52</a>
+                            href="tel:{{ _('+410793775752') }}">{{ _('079 377 57 52') }}</a>
                         <a
                             class="email"
                             itemprop="address"
-                            href="mailto:b.arifi@aat-reinigung.ch">b.arifi@aat-reinigung.ch</a>
+                            href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">{{ _('b.arifi@aat-reinigung.ch') }}</a>
                     </div>
                 </div>
             </div>
@@ -282,14 +302,16 @@
 
     <section class="about-us">
         <div class="wrapper">
-            <h3 class="custom-title"><span class="text">About us</span></h3>
+            <h3 class="custom-title"><span class="text">{{ _('About us') }}</span></h3>
             <div class="row">
                 <div class="col-m6 col-s12 col">
                     <article>
-                        <header>Arifi family</header>
+                        <header>{{ _('Arifi family') }}</header>
                         <div class="description">
+                            {{ _('
                             <p>The block about us describe Arifi family and information The block about us describe Arifi family and information</p>
                             <p>The block about us describe Arifi family and information</p>
+                            ')}}
                         </div>
                     </article>
                 </div>
@@ -299,7 +321,7 @@
                         width="330"
                         height="299"
                         src="/static/images/family.png"
-                        alt="Arifi family">
+                        alt="{{ _('Arifi family') }}">
                 </div>
             </div>
         </div>
@@ -307,18 +329,18 @@
 
     <section class="location">
         <div class="wrapper">
-            <h3 class="article-title">Our area</h3>
+            <h3 class="article-title">{{ _('Our area') }}</h3>
             <div class="map">
                 <img
                     width="450"
                     height="266"
                     src="static/images/switzerland-map.png"
-                    alt="Our area">
+                    alt="{{ _('Our area') }}">
 
-                <h4 id="baden">Baden</h4>
-                <h4 id="zurich">Zurich</h4>
-                <h4 id="aarau">Aarau</h4>
-                <h4 id="luzern">Luzern</h4>
+                <h4 id="baden">{{ _('Baden') }}</h4>
+                <h4 id="zurich">{{ _('Zurich') }}</h4>
+                <h4 id="aarau">{{ _('Aarau') }}</h4>
+                <h4 id="luzern">{{ _('Luzern') }}</h4>
             </div>
         </div>
     </section>
@@ -333,7 +355,7 @@
                 src="static/images/aat-reinigung-logo-small@2x.png"
                 alt="AAT Reinigung &amp; Hauswartung">
         </a>
-        <p class="copyright">&copy;	Website copyright 2016</p>
+        <p class="copyright">&copy;	{{ _('Website copyright 2016') }}</p>
     </div>
 </footer>
 </div>
