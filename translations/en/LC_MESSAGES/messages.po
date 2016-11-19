@@ -1,0 +1,220 @@
+# English translations for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-11-19 22:39+0100\n"
+"PO-Revision-Date: 2016-11-19 21:23+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: config.py:4
+msgid "German"
+msgstr ""
+
+#: config.py:5
+msgid "English"
+msgstr ""
+
+#: templates/index.html:6
+msgid "Aat Reinigung"
+msgstr ""
+
+#: templates/index.html:38
+msgid "AAT Reinigung &amp; Hauswartung"
+msgstr ""
+
+#: templates/index.html:41
+msgid "Our Special areas"
+msgstr ""
+
+#: templates/index.html:47 templates/index.html:96
+msgid "Office Cleaning"
+msgstr ""
+
+#: templates/index.html:54 templates/index.html:145
+msgid "Window Cleaning"
+msgstr ""
+
+#: templates/index.html:61 templates/index.html:156
+msgid "Stairs cleaning"
+msgstr ""
+
+#: templates/index.html:68 templates/index.html:166
+msgid "Apartment cleaning"
+msgstr ""
+
+#: templates/index.html:75 templates/index.html:212
+msgid "Commercial property"
+msgstr ""
+
+#: templates/index.html:81 templates/index.html:222
+msgid "House maintance"
+msgstr ""
+
+#: templates/index.html:87
+msgid "contact us"
+msgstr ""
+
+#: templates/index.html:98
+msgid ""
+"\n"
+"                    <p>The office cleaning ...</p>\n"
+"                    <p>The buro is a place where many people have the "
+"largest part of their lives ...</p>\n"
+"                    "
+msgstr ""
+
+#: templates/index.html:147
+msgid ""
+"\n"
+"                    <p>Window Cleaning is also very important ... </p>\n"
+"                    <p>Window Cleaning is also very important test text "
+"... </p>\n"
+"                    "
+msgstr ""
+
+#: templates/index.html:158
+msgid ""
+"\n"
+"                    <p>Stair houses are also part of our repertoire. We "
+"ensure that your stairwell is cleaned in such a way that it leaves a "
+"positive impression on customers and business partners.</p>\n"
+"                    "
+msgstr ""
+
+#: templates/index.html:168
+msgid ""
+"\n"
+"                    <p>We clean your private apartment as conscientiously"
+" as if it were our own. We are also pleased to meet special requirements "
+"by appointment.</p>\n"
+"                    "
+msgstr ""
+
+#: templates/index.html:214
+msgid ""
+"\n"
+"                    <p>Leave a shining impression with your customers: We"
+" bring your sales floor to a high gloss, thus contributing our part to "
+"your sales success.</p>\n"
+"                    "
+msgstr ""
+
+#: templates/index.html:224
+msgid ""
+"\n"
+"                    <p>We offer a professional house maintenance, which "
+"leaves nothing to be desired.</p>\n"
+"                    <p> For example, we take care of plants and lawns, "
+"clean underground garages and also take care of the house technology.</p>"
+"\n"
+"                    "
+msgstr ""
+
+#: templates/index.html:236
+msgid "Contact us"
+msgstr ""
+
+#: templates/index.html:243
+msgid ""
+"\n"
+"                            <p>Have we piqued your interest? We are "
+"looking forward to your call\n"
+"                                at 079 377 57 52 or your e-mail at "
+"b.arifi@aat-reinigung.ch.\n"
+"                                You can also contact us via the contact "
+"form below, we will contact you\n"
+"                                as soon as possible.\n"
+"                            </p>\n"
+"                            "
+msgstr ""
+
+#: templates/index.html:257
+msgid "First Name / Second Name"
+msgstr ""
+
+#: templates/index.html:261
+msgid "This field is required"
+msgstr ""
+
+#: templates/index.html:268
+msgid "e.g. email"
+msgstr ""
+
+#: templates/index.html:273
+msgid "e.g. phone number"
+msgstr ""
+
+#: templates/index.html:277
+msgid "Submit"
+msgstr ""
+
+#: templates/index.html:287
+msgid "Call or Email us:"
+msgstr ""
+
+#: templates/index.html:292
+msgid "+410793775752"
+msgstr ""
+
+#: templates/index.html:292
+msgid "079 377 57 52"
+msgstr ""
+
+#: templates/index.html:296
+msgid "b.arifi@aat-reinigung.ch"
+msgstr ""
+
+#: templates/index.html:305
+msgid "About us"
+msgstr ""
+
+#: templates/index.html:309 templates/index.html:324
+msgid "Arifi family"
+msgstr ""
+
+#: templates/index.html:311
+msgid ""
+"\n"
+"                            <p>The block about us describe Arifi family "
+"and information The block about us describe Arifi family and "
+"information</p>\n"
+"                            <p>The block about us describe Arifi family "
+"and information</p>\n"
+"                            "
+msgstr ""
+
+#: templates/index.html:332 templates/index.html:338
+msgid "Our area"
+msgstr ""
+
+#: templates/index.html:340
+msgid "Baden"
+msgstr ""
+
+#: templates/index.html:341
+msgid "Zurich"
+msgstr ""
+
+#: templates/index.html:342
+msgid "Aarau"
+msgstr ""
+
+#: templates/index.html:343
+msgid "Luzern"
+msgstr ""
+
+#: templates/index.html:358
+msgid "Website copyright 2016"
+msgstr ""

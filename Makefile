@@ -3,3 +3,12 @@ sprites:
 
 css:
 	cd static && node-sass scss/main.scss css/main.css --watch
+
+run:
+	python app.py
+
+compilemessage:
+	pybabel compile -d translations
+
+messages:
+	pybabel extract -F babel.cfg -k lazy_gettext -o messages.pot . && pybabel update -i messages.pot -d translations -l de &&  pybabel update -i messages.pot -d translations -l en
