@@ -234,77 +234,86 @@
                 </section>
             </div>
 
-            <section id="contact-us">
-                <div class="wrapper">
-                    <h3 class="custom-title"><span class="text">{{ _('Contact us') }}</span></h3>
-                    <div class="row">
-                        <div class="col-m6 col-s12 col">
-                            <form ng-submit="requestForm.$valid"
-                                  name="requestForm"
-                                  novalidate>
-                                <div class="description">
-                                    {{ _('
-                                    <p>Have we piqued your interest? We are looking forward to your call
-                                        at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
-                                        You can also contact us via the contact form below, we will contact you
-                                        as soon as possible.
-                                    </p>
-                                    ')}}
-                                </div>
 
-                                <div class="">
-                                    <input
-                                        class="custom-input"
-                                        type="text"
-                                        name="name"
-                                        placeholder="{{ _('First Name / Second Name') }}"
-                                        required>
-                                    <div ng-cloak
-                                         class="error"
-                                         ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
-                                </div>
-
-                                <input
-                                    class="custom-input"
-                                    type="email"
-                                    name="email"
-                                    placeholder="{{ _('e.g. email') }}">
-                                <input
-                                    class="custom-input"
-                                    type="tel"
-                                    name="tel"
-                                    placeholder="{{ _('e.g. phone number') }}">
-                                <button
-                                    type="submit"
-                                    class="button">
-                                    {{ _('Submit') }}
-                                </button>
-
-                                <div hidden
-                                     class="success-message">{{ _('Thank for you message, we will contact you as soon as possible') }}</div>
-                            </form>
+    <section id="contact-us">
+        <div class="wrapper">
+            <h3 class="custom-title"><span class="text">{{ _('Contact us') }}</span></h3>
+            <div class="row">
+                <div class="col-m6 col-s12 col">
+                    <form ng-submit="sendMessage(requestForm.$valid)"
+                          name="requestForm"
+                          method="post"
+                          novalidate
+                          ng-hide="formSent">
+                        <div class="description">
+                            {{ _('
+                            <p>Have we piqued your interest? We are looking forward to your call
+                                at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
+                                You can also contact us via the contact form below, we will contact you
+                                as soon as possible.
+                            </p>
+                            ')}}
                         </div>
-                        <div class="col-m6 col-s12 col">
-                            <div
-                                class="info"
-                                itemprop="LocalBusiness"
-                                itemscope
-                                itemtype="http://schema.org/Organization">
-                                <p class="text">{{ _('Call or Email us:') }}</p>
-                                <i class="tel-icon">&nbsp;</i>
-                                <a
-                                    class="tel"
-                                    itemprop="telephone"
-                                    href="tel:{{ _('+410793775752') }}">{{ _('079 377 57 52') }}</a>
-                                <a
-                                    class="email"
-                                    itemprop="address"
-                                    href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">{{ _('b.arifi@aat-reinigung.ch') }}</a>
-                            </div>
+
+                        <div>
+                            <input
+                            class="custom-input"
+                            type="text"
+                            name="name"
+                            ng-model="request.name"
+                            placeholder="{{ _('First Name / Second Name') }}"
+                            required>
+                            <div ng-cloak
+                                 class="error"
+                                 ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
                         </div>
+
+                        <input
+                            class="custom-input"
+                            type="email"
+                            name="email"
+                            ng-model="request.email"
+                            placeholder="{{ _('e.g. email') }}"
+                            required>
+                        <input
+                            class="custom-input"
+                            type="tel"
+                            name="phone"
+                            ng-model="request.phone"
+                            placeholder="{{ _('e.g. phone number') }}"
+                            required>
+                        <button
+                            ng-disabled="!formEnabled"
+                            type="submit"
+                            class="button">
+                            {{ _('Submit') }}
+                        </button>
+                    </form>
+                    <div ng-show="formSent">
+                        {{ _('Thank you for your message. We will contact you as soon as possible.') }}
                     </div>
                 </div>
-            </section>
+                <div class="col-m6 col-s12 col">
+                    <div
+                        class="info"
+                        itemprop="LocalBusiness"
+                        itemscope
+                        itemtype="http://schema.org/Organization">
+                        <p class="text">{{ _('Call or Email us:') }}</p>
+                        <i class="tel-icon">&nbsp;</i>
+                        <a
+                            class="tel"
+                            itemprop="telephone"
+                            href="tel:{{ _('+410793775752') }}">{{ _('079 377 57 52') }}</a>
+                        <a
+                            class="email"
+                            itemprop="address"
+                            href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">{{ _('b.arifi@aat-reinigung.ch') }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
             <section class="about-us">
                 <div class="wrapper">
@@ -340,7 +349,7 @@
                         <img
                             width="450"
                             height="266"
-                            src="static/images/switzerland-map.png"
+                            src="/static/images/switzerland-map.png"
                             alt="{{ _('Our area') }}">
                         <h4 id="baden">{{ _('Baden') }}</h4>
                         <h4 id="zurich">{{ _('Zurich') }}</h4>
@@ -357,7 +366,7 @@
                     <img
                         width="152"
                         height="74"
-                        src="static/images/aat-reinigung-logo-small@2x.png"
+                        src="/static/images/aat-reinigung-logo-small@2x.png"
                         alt="AAT Reinigung &amp; Hauswartung">
                 </a>
                 <p class="copyright">&copy;	{{ _('Website copyright 2016') }}</p>
@@ -376,7 +385,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="static/images/lobby/big-lobby-1.jpg"
+                        src="/static/images/lobby/big-lobby-1.jpg"
                         alt="{{ _('alt describe lobby 1') }}">
             </div>
             <div uib-slide index="1">
@@ -384,7 +393,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="static/images/lobby/big-lobby-2.jpg"
+                        src="/static/images/lobby/big-lobby-2.jpg"
                         alt="{{ _('alt describe lobby 2') }}">
             </div>
             <div uib-slide index="2">
@@ -392,7 +401,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="static/images/lobby/big-lobby-3.jpg"
+                        src="/static/images/lobby/big-lobby-3.jpg"
                         alt="{{ _('alt describe lobby 3') }}">
             </div>
         </div>
@@ -410,7 +419,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="static/images/lobby/big-lobby-4.jpg"
+                        src="/static/images/lobby/big-lobby-4.jpg"
                         alt="{{ _('alt describe lobby 4') }}">
             </div>
             <div uib-slide index="1">
@@ -418,7 +427,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="static/images/lobby/big-lobby-5.jpg"
+                        src="/static/images/lobby/big-lobby-5.jpg"
                         alt="{{ _('alt describe lobby 5') }}">
             </div>
             <div uib-slide index="2">
@@ -426,7 +435,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="static/images/lobby/big-lobby-6.jpg"
+                        src="/static/images/lobby/big-lobby-6.jpg"
                         alt="{{ _('alt describe lobby 6') }}">
             </div>
         </div>
@@ -443,12 +452,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.js"></script>
     <!--<script src="static/bower_components/angular-animate.js"></script>-->
 
-    <script src="static/bower_components/ui-bootstrap-tpls.js"></script>
+    <script src="/static/bower_components/ui-bootstrap-tpls.js"></script>
 
-    <script src="static/js/angular/directives/carousel-keyboard-navigation.js"></script>
-    <script src="static/js/angular/directives/scroll-to.js"></script>
-    <script src="static/js/angular/apps/aat.app.js"></script>
+    <script src="/static/js/angular/directives/carousel-keyboard-navigation.js"></script>
+    <script src="/static/js/angular/directives/scroll-to.js"></script>
+    <script src="/static/js/angular/apps/aat.app.js"></script>
 
-    <script src="static/js/angular/ctrls/aat.ctrl.js"></script>
+    <script src="/static/js/angular/ctrls/aat.ctrl.js"></script>
 </body>
 </html>
