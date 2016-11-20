@@ -13,6 +13,5 @@ compilemessage:
 messages:
 	pybabel extract -F babel.cfg -k lazy_gettext -o messages.pot . && pybabel update -i messages.pot -d translations -l de &&  pybabel update -i messages.pot -d translations -l en
 
-
 deploy:
-    git push heroku HEAD:master
+	git push heroku -f  HEAD:master
