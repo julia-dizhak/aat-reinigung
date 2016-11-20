@@ -5,8 +5,8 @@
         .module('aatApp',
             [
                 'ui.bootstrap',
-                'ngAnimate'
-                //'Language'
-                //'CarouselNavigation'
+                'ngAnimate',
+                'scrollTo',
+                'CarouselNavigation'
             ]);
 })();

@@ -122,13 +122,13 @@ h2 {
   text-align: center;
   color: #fff;
   background: #018bd3 url("../images/main-background.jpg") repeat-x center top;
-  padding: 20px 0 90px; }
+  padding: 20px 0 60px; }
   @media (max-width: 1024px) {
     .head {
-      padding: 45px 0; } }
+      padding-bottom: 45px; } }
   @media (max-width: 767px) {
     .head {
-      padding: 30px 0; } }
+      padding-bottom: 30px; } }
   .head .logo {
     display: block; }
 
@@ -147,11 +147,24 @@ h2 {
     vertical-align: bottom; }
 
 .language {
-  text-decoration: underline;
   text-align: right; }
+  .language .item {
+    padding: 1px 0 1px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s ease-in-out; }
+    .language .item:first-child {
+      margin: 0 4px 0 0; }
+    .language .item:hover {
+      border-bottom: 1px solid #fff; }
+    .language .item.selected {
+      border-bottom: 1px solid #fff; }
 
 .menu {
-  margin: 60px 0 0 0;
+  margin: 55px 0 0 0;
   padding: 0; }
   .menu .main-title {
     text-align: left;
@@ -159,7 +172,7 @@ h2 {
 
 .menu-list {
   list-style: none;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   padding: 0; }
   @media (max-width: 1024px) {
     .menu-list {
@@ -264,10 +277,6 @@ h2 {
 .modal-slider .modal-content {
   padding: 30px;
   box-sizing: border-box; }
-  @media (max-width: 767px) {
-    .modal-slider .modal-content {
-      height: 100%;
-      padding: 15px; } }
 
 .modal-slider .carousel-inner .item img {
   max-width: 760px; }
@@ -301,14 +310,10 @@ h2 {
     transition: transform 0.3s ease-in-out;
     overflow-x: hidden;
     overflow-y: auto;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
-    max-height: 100%; }
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2); }
     @media (max-width: 1024px) {
       .modal .modal-dialog {
         width: 90%; } }
-    @media (max-width: 767px) {
-      .modal .modal-dialog {
-        height: 96%; } }
   .modal.fade .modal-dialog {
     transform: translate(-50%, -100%); }
   .modal.in .modal-dialog {
@@ -333,7 +338,7 @@ h2 {
     z-index: 1;
     right: 0;
     top: 0;
-    padding: 5px 10px;
+    padding: 10px;
     cursor: pointer;
     color: rgba(36, 36, 36, 0.5);
     font-size: 26px;
@@ -378,6 +383,9 @@ h2 {
   @media (max-width: 1024px) {
     .carousel {
       min-height: 300px; } }
+  @media (max-width: 767px) {
+    .carousel .carousel-inner .text-center {
+      padding: 10px; } }
 
 .carousel-control {
   font-size: 0;
@@ -393,13 +401,13 @@ h2 {
     transform: translateY(-50%); }
     @media (max-width: 767px) {
       .carousel-control.left {
-        left: -15px; } }
+        left: -30px; } }
   .carousel-control.right {
     right: -25px;
     transform: translateY(-50%) rotate(180deg); }
     @media (max-width: 767px) {
       .carousel-control.right {
-        right: -15px; } }
+        right: -30px; } }
 
 @media all and (transform-3d) {
   .carousel-inner > .item {
@@ -636,6 +644,9 @@ h2 {
   margin: 60px 0; }
   #contact-us form {
     margin: 0 60px 0 30px; }
+    @media (max-width: 1024px) {
+      #contact-us form {
+        margin: 0 0 0 30px; } }
     @media (max-width: 767px) {
       #contact-us form {
         margin: 0; } }
@@ -645,12 +656,16 @@ h2 {
     display: block;
     width: 100%;
     border-radius: 3px;
-    padding: 15px 30px; }
+    padding: 15px 30px;
+    margin: 0 0 30px 0; }
   #contact-us .description p {
     font-size: 0.95em;
     line-height: 1.4;
     margin: 0 0 30px 0;
     padding: 0; }
+  #contact-us .success-message {
+    font-size: 1.1em;
+    line-height: 1.2; }
 
 [ng\:cloak],
 [ng-cloak],
@@ -699,6 +714,8 @@ ng\:form {
   @media (max-width: 767px) {
     .info {
       text-align: center; } }
+  .info .text {
+    padding: 15px 0; }
   .info .tel,
   .info .email {
     color: #018bd3;

@@ -2,12 +2,12 @@
   text-align: center;
   color: #fff;
   background: $main-backgound url('../images/main-background.jpg') repeat-x center top;
-  padding: 20px 0 90px;
+  padding: 20px 0 60px;
   @include respond-to(tablet) {
-    padding: 45px 0;
+    padding-bottom: 45px;
   }
   @include respond-to(mobile) {
-    padding: 30px 0;
+    padding-bottom: 30px;
   }
   .logo {
     display: block;
@@ -27,15 +27,29 @@
 }
 
 .language {
-  //float: right;
-  text-decoration: underline;
-  //clear: right;
   text-align: right;
+  .item {
+    padding: 1px 0 1px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
+    &:first-child {
+      margin: 0 4px 0 0;
+    }
+    &:hover {
+      border-bottom: 1px solid #fff;
+    }
+    &.selected {
+      border-bottom: 1px solid #fff;
+    }
+  }
 }
 
-
 .menu {
-  margin: 60px 0 0 0;
+  margin: 55px 0 0 0;
   padding: 0;
   .main-title {
     text-align: left;
@@ -45,7 +59,7 @@
 
 .menu-list {
   list-style: none;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   @include respond-to(tablet) {
     margin: 0;

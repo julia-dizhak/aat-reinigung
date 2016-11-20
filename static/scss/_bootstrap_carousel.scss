@@ -19,6 +19,15 @@
   @media (max-width: $tablet) {
     min-height: 300px;
   }
+
+  .carousel-inner {
+    .text-center {
+      @include respond-to(mobile) {
+        padding: 10px;
+      }
+    }
+  }
+
 }
 
 .carousel-control {
@@ -35,14 +44,14 @@
     left: -25px;
     transform: translateY(-50%);
     @media (max-width: $mobile) {
-      left: -15px;
+      left: -30px;
     }
   }
   &.right {
     right: -25px;
     transform: translateY(-50%) rotate(180deg);
     @media (max-width: $mobile) {
-      right: -15px;
+      right: -30px;
     }
   }
 }

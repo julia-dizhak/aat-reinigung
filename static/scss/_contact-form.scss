@@ -2,6 +2,9 @@
   margin: $margin-separated*4 0;
   form {
     margin: 0 60px 0 30px;
+    @include respond-to(tablet) {
+      margin: 0 0 0 30px;
+    }
     @include respond-to(mobile) {
       margin: 0;
     }
@@ -16,6 +19,7 @@
     width: 100%;
     border-radius: 3px;
     padding: $margin-separated 30px;
+    margin: 0 0 $margin-separated*2 0;
   }
 
 
@@ -26,6 +30,11 @@
       margin: 0 0 $margin-separated*2 0;
       padding: 0;
     }
+  }
+
+  .success-message {
+    font-size: 1.1em;
+    line-height: 1.2;
   }
 }
 
@@ -113,6 +122,9 @@ ng\:form {
   margin: $margin-separated*2 0 0 0;
   @include respond-to(mobile) {
     text-align: center;
+  }
+  .text {
+    padding: 15px 0;
   }
   .tel,
   .email {

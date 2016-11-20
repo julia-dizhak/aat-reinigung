@@ -1,381 +1,383 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <title>{{ _('Aat Reinigung') }}</title>
 
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="Copyright" content="">
+    <meta name="author" content="{{ _('seo author') }}">
+    <meta name="description" content="{{ _('seo description') }}">
+    <meta name="Copyright" content="{{ _('seo copyright') }}">
 
+    <!--<meta name="HandheldFriendly" content="True">-->
+    <!--<meta name="MobileOptimized" content="320">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="static/favicon.png">
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body ng-app="aatApp">
-<div ng-controller="aatController">
-    <header class="head">
-    <div class="wrapper">
-        <div class="language">
-            {% for lang, lang_label in LANGAUGES.iteritems() %}
-                {% if lang == LANGUAGE_CODE %}
-                    <div class="selected" language>{{ lang_label }}</div>
-                {% else %}
-                    <ul class="list">
-                        <li class="item"><a href="/lang/{{ lang }}" class="link">{{ lang_label }}</a></li>
+    <div ng-controller="aatController">
+        <header class="head">
+            <div class="wrapper">
+                <div class="language">
+                    {% for lang, lang_label in LANGAUGES.iteritems() %}
+                        {% if lang == LANGUAGE_CODE %}
+                            <span class="item selected">{{ lang_label }}</span>
+                        {% else %}
+                            <a href="/lang/{{ lang }}" class="item">{{ lang_label }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <a href="./" class="logo">
+                    <img
+                        width="294"
+                        height="143"
+                        src="static/images/aat-reinigung-logo@2x.png"
+                        alt="{{ _('AAT Reinigung &amp; Hauswartung') }}">
+                </a>
+                <menu class="menu">
+                    <h1 class="main-title">{{ _('Our Special areas') }}</h1>
+                    <ul class="menu-list">
+                        <li>
+                            <a
+                                class="item"
+                                scroll-to="#office-clean"
+                                href="#office-clean">
+                                <h2 class="title">{{ _('Office Cleaning') }}</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="item"
+                                scroll-to="#window-clean"
+                                href="#window-clean">
+                                <h2 class="title">{{ _('Window Cleaning') }}</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="item"
+                                scroll-to="#stairs-clean"
+                                href="#stairs-clean">
+                                <h2 class="title">{{ _('Stairs cleaning') }}</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="item"
+                                scroll-to="#apartment-clean"
+                                href="#apartment-clean">
+                                <h2 class="title">{{ _('Apartment cleaning') }}</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="item"
+                                scroll-to="#property-clean"
+                                href="#property-clean">
+                                <h2 class="title">{{ _('Commercial property') }}</h2>
+                            </a>
+                        <li>
+                            <a
+                                class="item"
+                                scroll-to="#house-clean"
+                                href="#house-clean">
+                                <h2 class="title">{{ _('House maintance') }}</h2>
+                            </a>
+                        </li>
                     </ul>
-                {% endif %}
-            {% endfor %}
-        </div>
-        <a href="./" class="logo">
-            <img
-                class=""
-                width="294"
-                height="143"
-                src="static/images/aat-reinigung-logo@2x.png"
-                alt="{{ _('AAT Reinigung &amp; Hauswartung') }}">
-        </a>
-        <menu class="menu">
-            <h1 class="main-title">{{ _('Our Special areas') }}</h1>
-            <ul class="menu-list">
-                <li>
-                    <a
-                        class="item"
-                        href="#office-clean">
-                        <h2 class="title">{{ _('Office Cleaning') }}</h2>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="item"
-                        href="#window-clean">
-                        <h2 class="title">{{ _('Window Cleaning') }}</h2>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="item"
-                        href="#stairs-clean">
-                        <h2 class="title">{{ _('Stairs cleaning') }}</h2>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="item"
-                        href="#apartment-clean">
-                        <h2 class="title">{{ _('Apartment cleaning') }}</h2>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        class="item"
-                        href="#property-clean">
-                        <h2 class="title">{{ _('Commercial property') }}</h2>
-                    </a>
-                <li>
-                    <a
-                        class="item"
-                        href="#house-clean">
-                        <h2 class="title">{{ _('House maintance') }}</h2>
-                    </a>
-                </li>
-            </ul>
-        </menu>
-        <div class="button-container">
-            <a href="#contact-us" class="button">{{ _('contact us') }}</a>
-        </div>
-    </div>
-</header>
-
-    <main class="main">
-    <div class="wrapper">
-        <section id="office-clean">
-            <article class="item">
-                <h3 class="article-title">{{ _('Office Cleaning') }}</h3>
-                <div class="description">
-                    {{ _('
-                    <p>The office cleaning ...</p>
-                    <p>The buro is a place where many people have the largest part of their lives ...</p>
-                    ')
-                    }}
-                </div>
-            </article>
-            <figure class="gallery">
-                <a  class="gallery-item"
-                    ng-click="showGalleryTop()"
-                    href="javascript:;">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/lobby-1.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/lobby-2.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/lobby-3.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/lobby-5.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/lobby-4.jpg"
-                        alt="">
-                </a>
-                <!--<figcaption></figcaption>-->
-            </figure>
-        </section>
-        <section id="window-clean">
-            <article class="item">
-                <h3 class="article-title">{{ _('Window Cleaning') }}</h3>
-                <div class="description">
-                    {{ _('
-                    <p>Window Cleaning is also very important ... </p>
-                    <p>Window Cleaning is also very important test text ... </p>
-                    ')}}
-                </div>
-            </article>
-        </section>
-        <section id="stairs-clean">
-            <article class="item">
-                <h3 class="article-title">{{ _('Stairs cleaning') }}</h3>
-                <div class="description">
-                    {{ _('
-                    <p>Stair houses are also part of our repertoire. We ensure that your stairwell is cleaned in such a way that it leaves a positive impression on customers and business partners.</p>
-                    ') }}
-                </div>
-            </article>
-        </section>
-        <section id="apartment-clean">
-            <article class="item">
-                <h3 class="article-title">{{ _('Apartment cleaning') }}</h3>
-                <div class="description">
-                    {{ _('
-                    <p>We clean your private apartment as conscientiously as if it were our own. We are also pleased to meet special requirements by appointment.</p>
-                    ')}}
-                </div>
-            </article>
-            <figure class="gallery">
-                <a  class="gallery-item"
-                    ng-click="showGalleryBottom()"
-                    href="javascript:;">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/Layer-6.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/Layer-7.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/Layer-8.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/Layer-9.jpg"
-                        alt="">
-                    <img
-                        class="picture"
-                        width=""
-                        height=""
-                        src="static/images/lobby/Layer-10.jpg"
-                        alt="">
-                </a>
-            </figure>
-        </section>
-        <section id="property-clean">
-            <article class="item">
-                <h3 class="article-title">{{ _('Commercial property') }}</h3>
-                <div class="description">
-                    {{ _('
-                    <p>Leave a shining impression with your customers: We bring your sales floor to a high gloss, thus contributing our part to your sales success.</p>
-                    ') }}
-                </div>
-            </article>
-        </section>
-        <section id="house-clean">
-            <article class="item">
-                <h3 class="article-title">{{ _('House maintance') }}</h3>
-                <div class="description">
-                    {{ _('
-                    <p>We offer a professional house maintenance, which leaves nothing to be desired.</p>
-                    <p> For example, we take care of plants and lawns, clean underground garages and also take care of the house technology.</p>
-                    ') }}
-                </div>
-            </article>
-        </section>
-    </div>
-
-
-    <section id="contact-us">
-        <div class="wrapper">
-            <h3 class="custom-title"><span class="text">{{ _('Contact us') }}</span></h3>
-            <div class="row">
-                <div class="col-m6 col-s12 col">
-                    <form ng-submit="requestForm.$valid"
-                          name="requestForm"
-                          novalidate>
-                        <div class="description">
-                            {{ _('
-                            <p>Have we piqued your interest? We are looking forward to your call
-                                at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
-                                You can also contact us via the contact form below, we will contact you
-                                as soon as possible.
-                            </p>
-                            ')}}
-                        </div>
-
-                        <div>
-                            <input
-                            class="custom-input"
-                            type="text"
-                            name="name"
-                            placeholder="{{ _('First Name / Second Name') }}"
-                            required>
-                            <div ng-cloak
-                                 class="error"
-                                 ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
-                        </div>
-
-                        <input
-                            class="custom-input"
-                            type="email"
-                            name="email"
-                            placeholder="{{ _('e.g. email') }}">
-                        <input
-                            class="custom-input"
-                            type="tel"
-                            name="tel"
-                            placeholder="{{ _('e.g. phone number') }}">
-                        <button
-                            type="submit"
-                            class="button">
-                            {{ _('Submit') }}
-                        </button>
-                    </form>
-                </div>
-                <div class="col-m6 col-s12 col">
-                    <div
-                        class="info"
-                        itemprop="LocalBusiness"
-                        itemscope
-                        itemtype="http://schema.org/Organization">
-                        <p class="text">{{ _('Call or Email us:') }}</p>
-                        <i class="tel-icon">&nbsp;</i>
-                        <a
-                            class="tel"
-                            itemprop="telephone"
-                            href="tel:{{ _('+410793775752') }}">{{ _('079 377 57 52') }}</a>
-                        <a
-                            class="email"
-                            itemprop="address"
-                            href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">{{ _('b.arifi@aat-reinigung.ch') }}</a>
-                    </div>
+                </menu>
+                <div class="button-container">
+                    <a href="#contact-us" class="button">{{ _('contact us') }}</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section class="about-us">
-        <div class="wrapper">
-            <h3 class="custom-title"><span class="text">{{ _('About us') }}</span></h3>
-            <div class="row">
-                <div class="col-m6 col-s12 col">
-                    <article>
-                        <header>{{ _('Arifi family') }}</header>
+        <main class="main">
+            <div class="wrapper">
+                <section id="office-clean">
+                    <article class="item">
+                        <h3 class="article-title">{{ _('Office Cleaning') }}</h3>
                         <div class="description">
                             {{ _('
-                            <p>The block about us describe Arifi family and information The block about us describe Arifi family and information</p>
-                            <p>The block about us describe Arifi family and information</p>
+                            <p>The office cleaning ...</p>
+                            <p>The buro is a place where many people have the largest part of their lives ...</p>
+                            ')
+                            }}
+                        </div>
+                    </article>
+                    <figure class="gallery">
+                        <a  class="gallery-item"
+                            ng-click="showGalleryTop()"
+                            href="javascript:;">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/lobby-1.jpg"
+                                alt="{{ _('alt describe lobby 1') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/lobby-2.jpg"
+                                alt="{{ _('alt describe lobby 2') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/lobby-3.jpg"
+                                alt="{{ _('alt describe lobby 3') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/lobby-5.jpg"
+                                alt="{{ _('alt describe lobby 5') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/lobby-4.jpg"
+                                alt="{{ _('alt describe lobby 4') }}">
+                        </a>
+                    </figure>
+                </section>
+                <section id="window-clean">
+                    <article class="item">
+                        <h3 class="article-title">{{ _('Window Cleaning') }}</h3>
+                        <div class="description">
+                            {{ _('
+                            <p>Window Cleaning is also very important ... </p>
+                            <p>Window Cleaning is also very important test text ... </p>
                             ')}}
                         </div>
                     </article>
+                </section>
+                <section id="stairs-clean">
+                    <article class="item">
+                        <h3 class="article-title">{{ _('Stairs cleaning') }}</h3>
+                        <div class="description">
+                            {{ _('
+                            <p>Stair houses are also part of our repertoire. We ensure that your stairwell is cleaned in such a way that it leaves a positive impression on customers and business partners.</p>
+                            ') }}
+                        </div>
+                    </article>
+                </section>
+                <section id="apartment-clean">
+                    <article class="item">
+                        <h3 class="article-title">{{ _('Apartment cleaning') }}</h3>
+                        <div class="description">
+                            {{ _('
+                            <p>We clean your private apartment as conscientiously as if it were our own. We are also pleased to meet special requirements by appointment.</p>
+                            ')}}
+                        </div>
+                    </article>
+                    <figure class="gallery">
+                        <a  class="gallery-item"
+                            ng-click="showGalleryBottom()"
+                            href="javascript:;">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/Layer-6.jpg"
+                                alt="{{ _('alt describe lobby 6') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/Layer-7.jpg"
+                                alt="{{ _('alt describe lobby 7') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/Layer-8.jpg"
+                                alt="{{ _('alt describe lobby 8') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/Layer-9.jpg"
+                                alt="{{ _('alt describe lobby 9') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="static/images/lobby/Layer-10.jpg"
+                                alt="{{ _('alt describe lobby 10') }}">
+                        </a>
+                    </figure>
+                </section>
+                <section id="property-clean">
+                    <article class="item">
+                        <h3 class="article-title">{{ _('Commercial property') }}</h3>
+                        <div class="description">
+                            {{ _('
+                            <p>Leave a shining impression with your customers: We bring your sales floor to a high gloss, thus contributing our part to your sales success.</p>
+                            ') }}
+                        </div>
+                    </article>
+                </section>
+                <section id="house-clean">
+                    <article class="item">
+                        <h3 class="article-title">{{ _('House maintance') }}</h3>
+                        <div class="description">
+                            {{ _('
+                            <p>We offer a professional house maintenance, which leaves nothing to be desired.</p>
+                            <p> For example, we take care of plants and lawns, clean underground garages and also take care of the house technology.</p>
+                            ') }}
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <section id="contact-us">
+                <div class="wrapper">
+                    <h3 class="custom-title"><span class="text">{{ _('Contact us') }}</span></h3>
+                    <div class="row">
+                        <div class="col-m6 col-s12 col">
+                            <form ng-submit="requestForm.$valid"
+                                  name="requestForm"
+                                  novalidate>
+                                <div class="description">
+                                    {{ _('
+                                    <p>Have we piqued your interest? We are looking forward to your call
+                                        at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
+                                        You can also contact us via the contact form below, we will contact you
+                                        as soon as possible.
+                                    </p>
+                                    ')}}
+                                </div>
+
+                                <div class="">
+                                    <input
+                                        class="custom-input"
+                                        type="text"
+                                        name="name"
+                                        placeholder="{{ _('First Name / Second Name') }}"
+                                        required>
+                                    <div ng-cloak
+                                         class="error"
+                                         ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
+                                </div>
+
+                                <input
+                                    class="custom-input"
+                                    type="email"
+                                    name="email"
+                                    placeholder="{{ _('e.g. email') }}">
+                                <input
+                                    class="custom-input"
+                                    type="tel"
+                                    name="tel"
+                                    placeholder="{{ _('e.g. phone number') }}">
+                                <button
+                                    type="submit"
+                                    class="button">
+                                    {{ _('Submit') }}
+                                </button>
+
+                                <div hidden
+                                     class="success-message">{{ _('Thank for you message, we will contact you as soon as possible') }}</div>
+                            </form>
+                        </div>
+                        <div class="col-m6 col-s12 col">
+                            <div
+                                class="info"
+                                itemprop="LocalBusiness"
+                                itemscope
+                                itemtype="http://schema.org/Organization">
+                                <p class="text">{{ _('Call or Email us:') }}</p>
+                                <i class="tel-icon">&nbsp;</i>
+                                <a
+                                    class="tel"
+                                    itemprop="telephone"
+                                    href="tel:{{ _('+410793775752') }}">{{ _('079 377 57 52') }}</a>
+                                <a
+                                    class="email"
+                                    itemprop="address"
+                                    href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">{{ _('b.arifi@aat-reinigung.ch') }}</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-m6 col-s12 col">
+            </section>
+
+            <section class="about-us">
+                <div class="wrapper">
+                    <h3 class="custom-title"><span class="text">{{ _('About us') }}</span></h3>
+                    <div class="row">
+                        <div class="col-m6 col-s12 col">
+                            <article>
+                                <header>{{ _('Arifi family') }}</header>
+                                <div class="description">
+                                    {{ _('
+                                    <p>The block about us describe Arifi family and information The block about us describe Arifi family and information</p>
+                                    <p>The block about us describe Arifi family and information</p>
+                                    ')}}
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-m6 col-s12 col">
+                            <img
+                                class="picture"
+                                width="330"
+                                height="299"
+                                src="/static/images/family.png"
+                                alt="{{ _('Arifi family') }}">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="location">
+                <div class="wrapper">
+                    <h3 class="article-title">{{ _('Our area') }}</h3>
+                    <div class="map">
+                        <img
+                            width="450"
+                            height="266"
+                            src="static/images/switzerland-map.png"
+                            alt="{{ _('Our area') }}">
+                        <h4 id="baden">{{ _('Baden') }}</h4>
+                        <h4 id="zurich">{{ _('Zurich') }}</h4>
+                        <h4 id="aarau">{{ _('Aarau') }}</h4>
+                        <h4 id="luzern">{{ _('Luzern') }}</h4>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                 <a href="./" class="logo">
                     <img
-                        class="picture"
-                        width="330"
-                        height="299"
-                        src="/static/images/family.png"
-                        alt="{{ _('Arifi family') }}">
-                </div>
+                        width="152"
+                        height="74"
+                        src="static/images/aat-reinigung-logo-small@2x.png"
+                        alt="AAT Reinigung &amp; Hauswartung">
+                </a>
+                <p class="copyright">&copy;	{{ _('Website copyright 2016') }}</p>
             </div>
-        </div>
-    </section>
-
-    <section class="location">
-        <div class="wrapper">
-            <h3 class="article-title">{{ _('Our area') }}</h3>
-            <div class="map">
-                <img
-                    width="450"
-                    height="266"
-                    src="static/images/switzerland-map.png"
-                    alt="{{ _('Our area') }}">
-
-                <h4 id="baden">{{ _('Baden') }}</h4>
-                <h4 id="zurich">{{ _('Zurich') }}</h4>
-                <h4 id="aarau">{{ _('Aarau') }}</h4>
-                <h4 id="luzern">{{ _('Luzern') }}</h4>
-            </div>
-        </div>
-    </section>
-</main>
-
-    <footer>
-    <div class="wrapper">
-         <a href="./" class="logo">
-            <img
-                width="152"
-                height="74"
-                src="static/images/aat-reinigung-logo-small@2x.png"
-                alt="AAT Reinigung &amp; Hauswartung">
-        </a>
-        <p class="copyright">&copy;	{{ _('Website copyright 2016') }}</p>
-    </div>
-</footer>
+        </footer>
 </div>
 
 <script type="text/ng-template" id="galleryTop.html">
     <div
         class="modal-container"
         carousel-navigation>
-        <div
-            class="close-btn"
-            ng-click="closeDialog()">&#10005;</div>
-        <div uib-carousel
-             ng-cloak>
+        <div class="close-btn" ng-click="closeDialog()">&#10005;</div>
+        <div uib-carousel ng-cloak>
             <div uib-slide index="0">
                 <img
                         class="picture"
                         width=""
                         height=""
                         src="static/images/lobby/big-lobby-1.jpg"
-                        alt="">
+                        alt="{{ _('alt describe lobby 1') }}">
             </div>
             <div uib-slide index="1">
                 <img
@@ -383,7 +385,7 @@
                         width=""
                         height=""
                         src="static/images/lobby/big-lobby-2.jpg"
-                        alt="">
+                        alt="{{ _('alt describe lobby 2') }}">
             </div>
             <div uib-slide index="2">
                 <img
@@ -391,27 +393,25 @@
                         width=""
                         height=""
                         src="static/images/lobby/big-lobby-3.jpg"
-                        alt="">
+                        alt="{{ _('alt describe lobby 3') }}">
             </div>
         </div>
     </div>
 </script>
+
 <script type="text/ng-template" id="galleryBottom.html">
     <div
         class="modal-container"
         carousel-navigation>
-        <div
-            class="close-btn"
-            ng-click="closeDialog()">&#10005;</div>
-        <div uib-carousel
-             ng-cloak>
+        <div class="close-btn" ng-click="closeDialog()">&#10005;</div>
+        <div uib-carousel ng-cloak>
             <div uib-slide index="0">
                 <img
                         class="picture"
                         width=""
                         height=""
                         src="static/images/lobby/big-lobby-4.jpg"
-                        alt="">
+                        alt="{{ _('alt describe lobby 4') }}">
             </div>
             <div uib-slide index="1">
                 <img
@@ -419,7 +419,7 @@
                         width=""
                         height=""
                         src="static/images/lobby/big-lobby-5.jpg"
-                        alt="">
+                        alt="{{ _('alt describe lobby 5') }}">
             </div>
             <div uib-slide index="2">
                 <img
@@ -427,22 +427,28 @@
                         width=""
                         height=""
                         src="static/images/lobby/big-lobby-6.jpg"
-                        alt="">
+                        alt="{{ _('alt describe lobby 6') }}">
             </div>
         </div>
     </div>
 </script>
 
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous">
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <!--<script src="static/bower_components/angular.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.js"></script>
+    <!--<script src="static/bower_components/angular-animate.js"></script>-->
 
-<script src="static/bower_components/angular.js"></script>
-<script src="static/bower_components/angular-animate.js"></script>
-<script src="static/bower_components/ui-bootstrap-tpls.js"></script>
-<!--<script src="static/bower_components/angular-sanitize.js"></script>-->
-<script src="static/js/angular/apps/aat.app.js"></script>
-<!--<script src="static/js/angular/directives/language.js"></script>-->
-<!--<script src="static/js/angular/directives/carousel-keyboard-navigation.js"></script>-->
+    <script src="static/bower_components/ui-bootstrap-tpls.js"></script>
 
-<script src="static/js/angular/ctrls/aat.ctrl.js"></script>
+    <script src="static/js/angular/directives/carousel-keyboard-navigation.js"></script>
+    <script src="static/js/angular/directives/scroll-to.js"></script>
+    <script src="static/js/angular/apps/aat.app.js"></script>
 
+    <script src="static/js/angular/ctrls/aat.ctrl.js"></script>
 </body>
 </html>
