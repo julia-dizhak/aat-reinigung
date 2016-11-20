@@ -5,15 +5,47 @@
         .module('aatApp')
         .controller('aatController', aatController);
 
-    aatController.$inject = ['$scope', '$uibModal'];
+    aatController.$inject = ['$scope', '$http', '$uibModal'];
 
-    function aatController($scope, $uibModal) {
+    function aatController($scope, $http, $uibModal) {
+        $scope.sendMessage = sendMessage;
         init();
 
-        $scope.showGalleryTop = showGalleryTop;
-        $scope.showGalleryBottom = showGalleryBottom;
-
         function init() {
+            $scope.request = {}
+            $scope.formEnabled = true;
+            $scope.formSent = false;
+
+            $scope.showGalleryTop = showGalleryTop;
+            $scope.showGalleryBottom = showGalleryBottom;
+        }
+
+        function releaseForm () {
+            $scope.formEnabled = true;
+        }
+
+        function sendMessage(isValid) {
+            console.log('test')
+            if (!isValid) {
+                return false;
+            }
+
+            var url = '/feedback/';
+            var data = angular.copy($scope.request);
+
+            $scope.formEnabled = false;
+
+            $http
+                .post(url, data)
+                .then(
+                    function () {
+                        $scope.formSent = true;
+                        releaseForm();
+                    },
+                    function () {
+                        releaseForm();
+                    }
+                )
 
         }
 
