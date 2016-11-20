@@ -1,5 +1,6 @@
 #contact-us {
   margin: $margin-separated*4 0;
+
   form {
     margin: 0 60px 0 30px;
     @include respond-to(tablet) {
@@ -8,9 +9,17 @@
     @include respond-to(mobile) {
       margin: 0;
     }
+    &.ng-submitted {
+      .custom-input {
+        &.ng-invalid {
+          border-color: #fff;
+          box-shadow: inset 0 0 0 2px $color-error !important;
+        }
+      }
+    }
   }
 
-  .custom-input {
+  .field {
     margin: 0 0 $margin-separated*2 0;
   }
 
@@ -54,7 +63,7 @@ ng\:form {
 
 
 .custom-input {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 100;
   border-radius: 3px;
   display: block;
@@ -62,6 +71,8 @@ ng\:form {
   border: 1px solid #c2c2c2;
   width: 100%;
   box-sizing: border-box;
+  appearance: none;
+  line-height: 1;
 
 
   &:hover {
@@ -101,14 +112,6 @@ ng\:form {
     }
   }
 }
-
-.custom-input {
-  &.ng-invalid {
-    border-color: #fff;
-    box-shadow: inset 0 0 0 2px $color-error !important;
-  }
-}
-
 
 .error {
   color: $color-error;

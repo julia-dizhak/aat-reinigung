@@ -200,6 +200,8 @@ h2 {
     box-sizing: border-box;
     margin-bottom: 30px;
     background: #018bd3; }
+    .menu-list li:hover {
+      box-shadow: inset 0 0 5px 0 #fff; }
     @media (max-width: 1024px) {
       .menu-list li {
         padding: 0; } }
@@ -510,7 +512,7 @@ h2 {
   .main .item {
     position: relative;
     padding: 0 0 0 130px;
-    margin: 0 0 40px 0; }
+    margin: 0 0 60px 0; }
     @media (max-width: 767px) {
       .main .item {
         padding: 55px 0 0 0;
@@ -579,8 +581,18 @@ h2 {
   width: 51px;
   height: 57px; }
 
+.gallery-item {
+  display: block;
+  cursor: pointer; }
+
+.gallery-fouritem .picture {
+  width: 25%; }
+
+.gallery-fiveitem .picture {
+  width: 20%; }
+
 .gallery {
-  margin: 0 0 40px 0; }
+  margin: 0 0 60px 0; }
   .gallery:before, .gallery:after {
     content: "";
     display: table;
@@ -589,15 +601,10 @@ h2 {
     clear: both; }
   .gallery .picture {
     float: left;
-    width: 20%;
     height: 154px; }
     @media (max-width: 767px) {
       .gallery .picture {
         width: 50%; } }
-
-.gallery-item {
-  display: block;
-  cursor: pointer; }
 
 .custom-title {
   padding: 0 40px 5px 40px;
@@ -650,7 +657,10 @@ h2 {
     @media (max-width: 767px) {
       #contact-us form {
         margin: 0; } }
-  #contact-us .custom-input {
+    #contact-us form.ng-submitted .custom-input.ng-invalid {
+      border-color: #fff;
+      box-shadow: inset 0 0 0 2px #ff5656 !important; }
+  #contact-us .field {
     margin: 0 0 30px 0; }
   #contact-us .button {
     display: block;
@@ -680,14 +690,16 @@ ng\:form {
   display: block; }
 
 .custom-input {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 100;
   border-radius: 3px;
   display: block;
   padding: 20px 15px 30px;
   border: 1px solid #c2c2c2;
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  appearance: none;
+  line-height: 1; }
   .custom-input.placeholder, .custom-input:-moz-placeholder, .custom-input::-moz-placeholder, .custom-input::-webkit-input-placeholder, .custom-input::-ms-input-placeholder {
     color: #242424; }
   .custom-input:focus::-webkit-input-placeholder {
@@ -698,10 +710,6 @@ ng\:form {
     color: transparent; }
   .custom-input:focus:-ms-input-placeholder {
     color: transparent; }
-
-.custom-input.ng-invalid {
-  border-color: #fff;
-  box-shadow: inset 0 0 0 2px #ff5656 !important; }
 
 .error {
   color: #ff5656;

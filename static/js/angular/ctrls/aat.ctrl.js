@@ -9,14 +9,16 @@
 
     function aatController($scope, $http, $uibModal) {
         $scope.sendMessage = sendMessage;
+
         init();
 
         function init() {
-            $scope.request = {}
+            $scope.request = {};
             $scope.formEnabled = true;
             $scope.formSent = false;
 
             $scope.showGalleryTop = showGalleryTop;
+            $scope.showGalleryMiddle = showGalleryMiddle;
             $scope.showGalleryBottom = showGalleryBottom;
         }
 
@@ -25,7 +27,6 @@
         }
 
         function sendMessage(isValid) {
-            console.log('test')
             if (!isValid) {
                 return false;
             }
@@ -52,6 +53,17 @@
         function showGalleryTop() {
             var $modalInstance = $uibModal.open({
                 templateUrl: 'galleryTop.html',
+                windowClass: 'modal-slider',
+                scope: $scope
+            });
+            $scope.closeDialog = function () {
+                $modalInstance.dismiss('cancel');
+            };
+        }
+
+        function showGalleryMiddle() {
+            var $modalInstance = $uibModal.open({
+                templateUrl: 'galleryMiddle.html',
                 windowClass: 'modal-slider',
                 scope: $scope
             });

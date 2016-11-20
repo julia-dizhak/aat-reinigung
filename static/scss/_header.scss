@@ -83,6 +83,9 @@
     box-sizing: border-box;
     margin-bottom: $margin-separated*2;
     background: $main-backgound;
+    &:hover {
+      box-shadow: inset 0 0 5px 0 #fff;
+    }
     @include respond-to(tablet) {
       padding: 0;
     }

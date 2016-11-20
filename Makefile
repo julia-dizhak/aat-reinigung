@@ -13,5 +13,8 @@ compilemessage:
 messages:
 	pybabel extract -F babel.cfg -k lazy_gettext -o messages.pot . && pybabel update -i messages.pot -d translations -l de &&  pybabel update -i messages.pot -d translations -l en
 
+pip:
+	pip install -r requirements.txt
+
 deploy:
 	git push heroku -f  HEAD:master

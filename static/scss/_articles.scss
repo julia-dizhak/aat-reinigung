@@ -10,7 +10,7 @@
   .item {
     position: relative;
     padding: 0 0 0 130px;
-    margin: 0 0 ($margin-separated*2)+10 0;
+    margin: 0 0 ($margin-separated*2)+30 0;
     @include respond-to(mobile) {
       padding: 55px 0 0 0;
       text-align: center;
@@ -88,12 +88,25 @@
   }
 }
 
+.gallery-item {
+  display: block;
+  cursor: pointer;
+}
+.gallery-fouritem {
+  .picture {
+    width: 25%;
+  }
+}
+.gallery-fiveitem {
+  .picture {
+    width: 20%;
+  }
+}
 .gallery {
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
   @include clearfix;
   .picture {
     float: left;
-    width: 20%;
     height: 154px;
     @include respond-to(mobile) {
       width: 50%;
@@ -102,10 +115,7 @@
   }
 }
 
-.gallery-item {
-  display: block;
-  cursor: pointer;
-}
+
 
 
 .custom-title {

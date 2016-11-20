@@ -13,8 +13,8 @@
     <!--<meta name="MobileOptimized" content="320">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="static/favicon.png">
-    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" href="/static/favicon.png">
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body ng-app="aatApp">
     <div ng-controller="aatController">
@@ -33,7 +33,7 @@
                     <img
                         width="294"
                         height="143"
-                        src="static/images/aat-reinigung-logo@2x.png"
+                        src="/static/images/aat-reinigung-logo@2x.png"
                         alt="{{ _('AAT Reinigung &amp; Hauswartung') }}">
                 </a>
                 <menu class="menu">
@@ -108,38 +108,38 @@
                         </div>
                     </article>
                     <figure class="gallery">
-                        <a  class="gallery-item"
+                        <a  class="gallery-item gallery-fiveitem"
                             ng-click="showGalleryTop()"
                             href="javascript:;">
                             <img
                                 class="picture"
                                 width=""
                                 height=""
-                                src="static/images/lobby/lobby-1.jpg"
+                                src="/static/images/lobby/lobby-1.jpg"
                                 alt="{{ _('alt describe lobby 1') }}">
                             <img
                                 class="picture"
                                 width=""
                                 height=""
-                                src="static/images/lobby/lobby-2.jpg"
+                                src="/static/images/lobby/lobby-2.jpg"
                                 alt="{{ _('alt describe lobby 2') }}">
                             <img
                                 class="picture"
                                 width=""
                                 height=""
-                                src="static/images/lobby/lobby-3.jpg"
+                                src="/static/images/lobby/GS25_staircase.jpg"
                                 alt="{{ _('alt describe lobby 3') }}">
                             <img
                                 class="picture"
                                 width=""
                                 height=""
-                                src="static/images/lobby/lobby-5.jpg"
-                                alt="{{ _('alt describe lobby 5') }}">
+                                src="/static/images/lobby/GS25_officeright.jpg"
+                                alt="{{ _('alt describe lobby 3') }}">
                             <img
                                 class="picture"
                                 width=""
                                 height=""
-                                src="static/images/lobby/lobby-4.jpg"
+                                src="/static/images/lobby/GS14_advisorsentrance.jpg"
                                 alt="{{ _('alt describe lobby 4') }}">
                         </a>
                     </figure>
@@ -164,6 +164,36 @@
                             ') }}
                         </div>
                     </article>
+                    <figure class="gallery">
+                        <a  class="gallery-item gallery-fouritem"
+                            ng-click="showGalleryMiddle()"
+                            href="javascript:;">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/GS14_advisorsoffice.jpg"
+                                alt="{{ _('alt describe lobby 1') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/lobby-3.jpg"
+                                alt="{{ _('alt describe lobby 2') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/lobby-4.jpg"
+                                alt="{{ _('alt describe lobby 3') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/lobby-5.jpg"
+                                alt="{{ _('alt describe lobby 5') }}">
+                        </a>
+                    </figure>
                 </section>
                 <section id="apartment-clean">
                     <article class="item">
@@ -174,42 +204,6 @@
                             ')}}
                         </div>
                     </article>
-                    <figure class="gallery">
-                        <a  class="gallery-item"
-                            ng-click="showGalleryBottom()"
-                            href="javascript:;">
-                            <img
-                                class="picture"
-                                width=""
-                                height=""
-                                src="static/images/lobby/Layer-6.jpg"
-                                alt="{{ _('alt describe lobby 6') }}">
-                            <img
-                                class="picture"
-                                width=""
-                                height=""
-                                src="static/images/lobby/Layer-7.jpg"
-                                alt="{{ _('alt describe lobby 7') }}">
-                            <img
-                                class="picture"
-                                width=""
-                                height=""
-                                src="static/images/lobby/Layer-8.jpg"
-                                alt="{{ _('alt describe lobby 8') }}">
-                            <img
-                                class="picture"
-                                width=""
-                                height=""
-                                src="static/images/lobby/Layer-9.jpg"
-                                alt="{{ _('alt describe lobby 9') }}">
-                            <img
-                                class="picture"
-                                width=""
-                                height=""
-                                src="static/images/lobby/Layer-10.jpg"
-                                alt="{{ _('alt describe lobby 10') }}">
-                        </a>
-                    </figure>
                 </section>
                 <section id="property-clean">
                     <article class="item">
@@ -220,6 +214,42 @@
                             ') }}
                         </div>
                     </article>
+                    <figure class="gallery">
+                        <a  class="gallery-item gallery-fiveitem"
+                            ng-click="showGalleryBottom()"
+                            href="javascript:;">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/DSCF7705-entrace.jpg"
+                                alt="{{ _('alt describe lobby 6') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/DSCF7710_capsule_1.jpg"
+                                alt="{{ _('alt describe lobby 7') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/Meeting-Room11.jpg"
+                                alt="{{ _('alt describe lobby 8') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/DSCF7717_capsule_2.jpg"
+                                alt="{{ _('alt describe lobby 9') }}">
+                            <img
+                                class="picture"
+                                width=""
+                                height=""
+                                src="/static/images/lobby/GS14_lobbyright.jpg"
+                                alt="{{ _('alt describe lobby 10') }}">
+                        </a>
+                    </figure>
                 </section>
                 <section id="house-clean">
                     <article class="item">
@@ -255,33 +285,45 @@
                             ')}}
                         </div>
 
-                        <div>
+                        <div class="field">
                             <input
-                            class="custom-input"
-                            type="text"
-                            name="name"
-                            ng-model="request.name"
-                            placeholder="{{ _('First Name / Second Name') }}"
-                            required>
+                                class="custom-input"
+                                type="text"
+                                name="name"
+                                ng-model="request.name"
+                                placeholder="{{ _('First Name / Second Name') }}"
+                                required>
                             <div ng-cloak
                                  class="error"
                                  ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
                         </div>
 
-                        <input
-                            class="custom-input"
-                            type="email"
-                            name="email"
-                            ng-model="request.email"
-                            placeholder="{{ _('e.g. email') }}"
-                            required>
-                        <input
-                            class="custom-input"
-                            type="tel"
-                            name="phone"
-                            ng-model="request.phone"
-                            placeholder="{{ _('e.g. phone number') }}"
-                            required>
+                        <div class="field">
+                            <input
+                                class="custom-input"
+                                type="email"
+                                name="email"
+                                ng-model="request.email"
+                                placeholder="{{ _('e.g. email') }}"
+                                required>
+                            <div ng-cloak
+                                 class="error"
+                                 ng-show="requestForm.email.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
+                        </div>
+
+                        <div class="field">
+                            <input
+                                class="custom-input"
+                                type="tel"
+                                name="phone"
+                                ng-model="request.phone"
+                                placeholder="{{ _('e.g. phone number') }}"
+                                required>
+                            <div ng-cloak
+                                 class="error"
+                                 ng-show="requestForm.phone.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
+                        </div>
+
                         <button
                             ng-disabled="!formEnabled"
                             type="submit"
@@ -289,7 +331,9 @@
                             {{ _('Submit') }}
                         </button>
                     </form>
-                    <div ng-show="formSent">
+                    <div
+                        class="success-message"
+                        ng-show="formSent">
                         {{ _('Thank you for your message. We will contact you as soon as possible.') }}
                     </div>
                 </div>
@@ -385,7 +429,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="/static/images/lobby/big-lobby-1.jpg"
+                        src="/static/images/lobby/GS14_lobby-copy.jpg"
                         alt="{{ _('alt describe lobby 1') }}">
             </div>
             <div uib-slide index="1">
@@ -393,7 +437,7 @@
                         class="picture"
                         width=""
                         height=""
-                        src="/static/images/lobby/big-lobby-2.jpg"
+                        src="/static/images/lobby/GS14_lobbyleft-copy.jpg"
                         alt="{{ _('alt describe lobby 2') }}">
             </div>
             <div uib-slide index="2">
@@ -401,8 +445,66 @@
                         class="picture"
                         width=""
                         height=""
-                        src="/static/images/lobby/big-lobby-3.jpg"
+                        src="/static/images/lobby/GS25_staircase-copy.jpg"
                         alt="{{ _('alt describe lobby 3') }}">
+            </div>
+            <div uib-slide index="3">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/GS25_officeright-copy.jpg"
+                        alt="{{ _('alt describe lobby 3') }}">
+            </div>
+            <div uib-slide index="4">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/GS14_advisorsentrance-copy.jpg"
+                        alt="{{ _('alt describe lobby 3') }}">
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="galleryMiddle.html">
+    <div
+        class="modal-container"
+        carousel-navigation>
+        <div class="close-btn" ng-click="closeDialog()">&#10005;</div>
+        <div uib-carousel ng-cloak>
+            <div uib-slide index="0">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/GS14_advisorsoffice-copy.jpg"
+                        alt="{{ _('alt describe lobby 4') }}">
+            </div>
+            <div uib-slide index="1">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/GS14_lobbyleftdoors-copy.jpg"
+                        alt="{{ _('alt describe lobby 5') }}">
+            </div>
+            <div uib-slide index="2">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/GS14_lobbyoffices-copy.jpg"
+                        alt="{{ _('alt describe lobby 6') }}">
+            </div>
+            <div uib-slide index="3">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/GS25_officemiddle-copy.jpg"
+                        alt="{{ _('alt describe lobby 6') }}">
             </div>
         </div>
     </div>
@@ -419,24 +521,40 @@
                         class="picture"
                         width=""
                         height=""
-                        src="/static/images/lobby/big-lobby-4.jpg"
-                        alt="{{ _('alt describe lobby 4') }}">
+                        src="/static/images/lobby/big-lobby-5.jpg"
+                        alt="{{ _('alt describe lobby 5') }}">
             </div>
             <div uib-slide index="1">
                 <img
                         class="picture"
                         width=""
                         height=""
-                        src="/static/images/lobby/big-lobby-5.jpg"
-                        alt="{{ _('alt describe lobby 5') }}">
+                        src="/static/images/lobby/big-lobby-4.jpg"
+                        alt="{{ _('alt describe lobby 4') }}">
             </div>
             <div uib-slide index="2">
                 <img
                         class="picture"
                         width=""
                         height=""
-                        src="/static/images/lobby/big-lobby-6.jpg"
-                        alt="{{ _('alt describe lobby 6') }}">
+                        src="/static/images/lobby/big-lobby-3.jpg"
+                        alt="{{ _('alt describe lobby 3') }}">
+            </div>
+            <div uib-slide index="3">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/big-lobby-2.jpg"
+                        alt="{{ _('alt describe lobby 2') }}">
+            </div>
+            <div uib-slide index="4">
+                <img
+                        class="picture"
+                        width=""
+                        height=""
+                        src="/static/images/lobby/big-lobby-1.jpg"
+                        alt="{{ _('alt describe lobby 1') }}">
             </div>
         </div>
     </div>
