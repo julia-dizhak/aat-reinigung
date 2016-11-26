@@ -1,7 +1,21 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+
 #contact-us {
   margin: $margin-separated*4 0;
-
-  form {
+  .content {
     margin: 0 60px 0 30px;
     @include respond-to(tablet) {
       margin: 0 0 0 30px;
@@ -9,6 +23,9 @@
     @include respond-to(mobile) {
       margin: 0;
     }
+  }
+
+  form {
     &.ng-submitted {
       .custom-input {
         &.ng-invalid {
@@ -17,6 +34,7 @@
         }
       }
     }
+
   }
 
   .field {
@@ -44,23 +62,9 @@
   .success-message {
     font-size: 1.1em;
     line-height: 1.2;
+    margin: 30px 0;
   }
 }
-
-[ng\:cloak],
-[ng-cloak],
-[data-ng-cloak],
-[x-ng-cloak],
-.ng-cloak,
-.x-ng-cloak,
-.ng-hide:not(.ng-hide-animate) {
-  display: none !important;
-}
-
-ng\:form {
-  display: block;
-}
-
 
 .custom-input {
   font-size: 1em;
@@ -71,9 +75,10 @@ ng\:form {
   border: 1px solid #c2c2c2;
   width: 100%;
   box-sizing: border-box;
-  appearance: none;
   line-height: 1;
 
+  -webkit-appearance: none;
+  appearance: none;
 
   &:hover {
     //border: 1px solid $main-backgound;

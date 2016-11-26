@@ -9,8 +9,8 @@
     <meta name="description" content="{{ _('seo description') }}">
     <meta name="Copyright" content="{{ _('seo copyright') }}">
 
-    <!--<meta name="HandheldFriendly" content="True">-->
-    <!--<meta name="MobileOptimized" content="320">-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/static/favicon.png">
@@ -270,71 +270,70 @@
             <h3 class="custom-title"><span class="text">{{ _('Contact us') }}</span></h3>
             <div class="row">
                 <div class="col-m6 col-s12 col">
-                    <form ng-submit="sendMessage(requestForm.$valid)"
-                          name="requestForm"
-                          method="post"
-                          novalidate
-                          ng-hide="formSent">
-                        <div class="description">
-                            {{ _('
-                            <p>Have we piqued your interest? We are looking forward to your call
-                                at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
-                                You can also contact us via the contact form below, we will contact you
-                                as soon as possible.
-                            </p>
-                            ')}}
+                    <div class="content">
+                        <form
+                            ng-submit="sendMessage(requestForm.$valid)"
+                            name="requestForm"
+                            method="post"
+                            novalidate
+                            ng-hide="formSent">
+                                <div class="description">
+                                        {{ _('
+                                        <p>Have we piqued your interest? We are looking forward to your call
+                                            at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
+                                            You can also contact us via the contact form below, we will contact you
+                                            as soon as possible.
+                                        </p>
+                                        ')}}
+                                </div>
+                                <div class="field">
+                                    <input
+                                        class="custom-input"
+                                        type="text"
+                                        name="name"
+                                        ng-model="request.name"
+                                        placeholder="{{ _('First Name / Second Name') }}"
+                                        required>
+                                    <div ng-cloak
+                                         class="error"
+                                         ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
+                                </div>
+                                <div class="field">
+                                    <input
+                                        class="custom-input"
+                                        type="email"
+                                        name="email"
+                                        ng-model="request.email"
+                                        placeholder="{{ _('e.g. email') }}"
+                                        required>
+                                    <div ng-cloak
+                                         class="error"
+                                         ng-show="requestForm.email.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
+                                </div>
+                                <div class="field">
+                                    <input
+                                        class="custom-input"
+                                        type="tel"
+                                        name="phone"
+                                        ng-model="request.phone"
+                                        placeholder="{{ _('e.g. phone number') }}"
+                                        required>
+                                    <div ng-cloak
+                                         class="error"
+                                         ng-show="requestForm.phone.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
+                                </div>
+                                <button
+                                    ng-disabled="!formEnabled"
+                                    type="submit"
+                                    class="button">
+                                    {{ _('Submit') }}
+                                </button>
+                        </form>
+                        <div
+                            class="success-message"
+                            ng-show="formSent">
+                            {{ _('Thank you for your message. We will contact you as soon as possible.') }}
                         </div>
-
-                        <div class="field">
-                            <input
-                                class="custom-input"
-                                type="text"
-                                name="name"
-                                ng-model="request.name"
-                                placeholder="{{ _('First Name / Second Name') }}"
-                                required>
-                            <div ng-cloak
-                                 class="error"
-                                 ng-show="requestForm.name.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
-                        </div>
-
-                        <div class="field">
-                            <input
-                                class="custom-input"
-                                type="email"
-                                name="email"
-                                ng-model="request.email"
-                                placeholder="{{ _('e.g. email') }}"
-                                required>
-                            <div ng-cloak
-                                 class="error"
-                                 ng-show="requestForm.email.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
-                        </div>
-
-                        <div class="field">
-                            <input
-                                class="custom-input"
-                                type="tel"
-                                name="phone"
-                                ng-model="request.phone"
-                                placeholder="{{ _('e.g. phone number') }}"
-                                required>
-                            <div ng-cloak
-                                 class="error"
-                                 ng-show="requestForm.phone.$invalid && requestForm.$submitted">{{ _('This field is required') }}</div>
-                        </div>
-
-                        <button
-                            ng-disabled="!formEnabled"
-                            type="submit"
-                            class="button">
-                            {{ _('Submit') }}
-                        </button>
-                    </form>
-                    <div
-                        class="success-message"
-                        ng-show="formSent">
-                        {{ _('Thank you for your message. We will contact you as soon as possible.') }}
                     </div>
                 </div>
                 <div class="col-m6 col-s12 col">
@@ -344,15 +343,21 @@
                         itemscope
                         itemtype="http://schema.org/Organization">
                         <p class="text">{{ _('Call or Email us:') }}</p>
-                        <i class="tel-icon">&nbsp;</i>
+                        <a
+                            class="tel-icon"
+                            href="tel:{{ _('+410793775752') }}">&nbsp;</a>
                         <a
                             class="tel"
                             itemprop="telephone"
-                            href="tel:{{ _('+410793775752') }}">{{ _('079 377 57 52') }}</a>
+                            href="tel:{{ _('+410793775752') }}">
+                            {{ _('079 377 57 52') }}
+                        </a>
                         <a
                             class="email"
                             itemprop="address"
-                            href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">{{ _('b.arifi@aat-reinigung.ch') }}</a>
+                            href="mailto:{{ _('b.arifi@aat-reinigung.ch') }}">
+                            {{ _('b.arifi@aat-reinigung.ch') }}
+                        </a>
                     </div>
                 </div>
             </div>

@@ -100,7 +100,13 @@
 .gallery-fiveitem {
   .picture {
     width: 20%;
+    &:last-child {
+      @include respond-to(mobile) {
+        display: none;
+      }
+    }
   }
+
 }
 .gallery {
   margin: 0 0 60px 0;

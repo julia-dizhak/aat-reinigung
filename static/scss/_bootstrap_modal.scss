@@ -1,7 +1,7 @@
 // Modal dialog with slider inside
 .modal-slider {
   .modal-content {
-    padding: 30px;
+    //padding: 30px;
     box-sizing: border-box;
     @media(max-width: $mobile) {
       //height: 100%;
@@ -13,6 +13,8 @@
     .item {
       img {
         max-width: 760px;
+        display: inline-block;
+        vertical-align: bottom;
         @media(max-width: $tablet) {
           max-width: 600px;
         }
@@ -71,16 +73,20 @@
     }
   }
   .modal-container {
-    width: 800px;
+    //width: 800px;
+    width: 760px;
     margin: auto;
     .title {
       font-size: 1.4em;
       margin-bottom: 2em;
     }
     @media (max-width: $tablet) {
-      width: 100%;
+      max-width: 600px;
+      //width: 100%;
     }
     @media (max-width: $mobile) {
+      //max-width: 400px;
+      width: 100%;
       height: 100%;
     }
   }
@@ -96,7 +102,8 @@
 
     padding: 10px;
     cursor: pointer;
-    color: rgba($color-default,0.5);
+    color: #fff;
+    //color: rgba($color-default,0.5);
     font-size: 26px;
     transition: color 0.25s ease-in-out;
 
