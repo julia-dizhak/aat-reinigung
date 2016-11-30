@@ -4,12 +4,12 @@
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
   .icon, .menu-list li:first-child .item:before, .menu-list li:nth-child(2) .item:before, .menu-list li:nth-child(3) .item:before, .menu-list li:nth-child(4) .item:before, .menu-list li:nth-child(5) .item:before, .menu-list li:nth-child(6) .item:before, #office-clean .item:before, #window-clean .item:before, #stairs-clean .item:before, #apartment-clean .item:before, #property-clean .item:before, #house-clean .item:before {
     background-image: url("../sprites_gen/sprite@1.5x.png");
-    background-size: 61px 578px; } }
+    background-size: 61px 573px; } }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .icon, .menu-list li:first-child .item:before, .menu-list li:nth-child(2) .item:before, .menu-list li:nth-child(3) .item:before, .menu-list li:nth-child(4) .item:before, .menu-list li:nth-child(5) .item:before, .menu-list li:nth-child(6) .item:before, #office-clean .item:before, #window-clean .item:before, #stairs-clean .item:before, #apartment-clean .item:before, #property-clean .item:before, #house-clean .item:before {
     background-image: url("../sprites_gen/sprite@2x.png");
-    background-size: 61px 579px; } }
+    background-size: 61px 574px; } }
 
 body {
   font: 200 100%/120% "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -206,7 +206,7 @@ h2 {
       .menu-list li {
         padding: 0; } }
     .menu-list li:first-child .item:before {
-      background-position: 0px -153px;
+      background-position: 0px -148px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
@@ -220,7 +220,7 @@ h2 {
       width: 44px;
       height: 38px; }
     .menu-list li:nth-child(3) .item:before {
-      background-position: 0px -250px;
+      background-position: 0px -245px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
@@ -234,14 +234,15 @@ h2 {
       width: 47px;
       height: 31px; }
     .menu-list li:nth-child(5) .item:before {
-      background-position: 0px -109px;
+      background-position: 0px -69px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
-      width: 44px;
-      height: 44px; }
+      width: 39px;
+      height: 39px;
+      left: 13px; }
     .menu-list li:nth-child(6) .item:before {
-      background-position: 0px -300px;
+      background-position: 0px -295px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
@@ -535,7 +536,7 @@ h2 {
         display: none; }
 
 #office-clean .item:before {
-  background-position: 0px -517px;
+  background-position: 0px -512px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -543,7 +544,7 @@ h2 {
   height: 62px; }
 
 #window-clean .item:before {
-  background-position: 0px -352px;
+  background-position: 0px -347px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -551,7 +552,7 @@ h2 {
   height: 52px; }
 
 #stairs-clean .item:before {
-  background-position: 0px -404px;
+  background-position: 0px -399px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -559,7 +560,7 @@ h2 {
   height: 56px; }
 
 #apartment-clean .item:before {
-  background-position: 0px -69px;
+  background-position: 0px -108px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -567,7 +568,7 @@ h2 {
   height: 40px; }
 
 #property-clean .item:before {
-  background-position: 0px -201px;
+  background-position: 0px -196px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -575,7 +576,7 @@ h2 {
   height: 49px; }
 
 #house-clean .item:before {
-  background-position: 0px -460px;
+  background-position: 0px -455px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;

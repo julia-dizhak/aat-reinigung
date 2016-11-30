@@ -124,8 +124,9 @@
     &:nth-child(5) {
       .item {
         &:before {
-           @extend .icon;
-           @include sprite($door);
+          @extend .icon;
+          @include sprite($door);
+          left: 13px;
         }
       }
     }
