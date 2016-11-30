@@ -7,28 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-11-20 22:10+0100\n"
-"PO-Revision-Date: 2016-11-19 23:07+0100\n"
+"POT-Creation-Date: 2016-11-30 14:13+0100\n"
+"PO-Revision-Date: 2016-11-30 14:23+0100\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: config.py:4
 msgid "German"
-msgstr ""
+msgstr "German"
 
 #: config.py:5
 msgid "English"
-msgstr ""
+msgstr "Engish"
 
 #: templates/index.html:6
 msgid "Aat Reinigung"
-msgstr ""
+msgstr "AAT Cleaning"
 
 #: templates/index.html:8
 msgid "seo author"
@@ -44,118 +45,126 @@ msgstr ""
 
 #: templates/index.html:37
 msgid "AAT Reinigung &amp; Hauswartung"
-msgstr ""
+msgstr "AAT Cleaning &amp; Property Maintenance"
 
 #: templates/index.html:40
 msgid "Our Special areas"
-msgstr ""
+msgstr "We are specialized in the following services"
 
-#: templates/index.html:47 templates/index.html:101
+#: templates/index.html:47 templates/index.html:104
 msgid "Office Cleaning"
-msgstr ""
+msgstr "Office Cleaning"
 
-#: templates/index.html:55 templates/index.html:149
+#: templates/index.html:55 templates/index.html:152
 msgid "Window Cleaning"
-msgstr ""
+msgstr "Window Cleaning"
 
-#: templates/index.html:63 templates/index.html:160
+#: templates/index.html:63 templates/index.html:163
 msgid "Stairs cleaning"
-msgstr ""
+msgstr "Staircase Cleaning"
 
-#: templates/index.html:71 templates/index.html:170
+#: templates/index.html:71 templates/index.html:203
 msgid "Apartment cleaning"
-msgstr ""
+msgstr "Apartment Cleaning"
 
-#: templates/index.html:79 templates/index.html:216
+#: templates/index.html:79 templates/index.html:213
 msgid "Commercial property"
-msgstr ""
+msgstr "Commercial Area Cleaning"
 
-#: templates/index.html:86 templates/index.html:226
+#: templates/index.html:86 templates/index.html:259
 msgid "House maintance"
-msgstr ""
+msgstr "Property Maintenance"
 
-#: templates/index.html:92
+#: templates/index.html:95
 msgid "contact us"
-msgstr ""
+msgstr "Contact us"
 
-#: templates/index.html:103
+#: templates/index.html:106
 msgid ""
 "\n"
 "                            <p>The office cleaning ...</p>\n"
-"                            <p>The buro is a place where many people have"
-" the largest part of their lives ...</p>\n"
+"                            <p>The buro is a place where many people have "
+"the largest part of their lives ...</p>\n"
 "                            "
 msgstr ""
+"\n"
+"                    <p>Office Cleaning</p>\n"
+"                    <p>An office is a place where many people spend the "
+"largest part of their day. That’s why we think each office should meet the "
+"highest cleanliness standards - it’s certainly more fun to work in a clean "
+"place.</p>\n"
+"                    "
 
-#: templates/index.html:119 templates/index.html:380
+#: templates/index.html:122 templates/index.html:179 templates/index.html:438
+#: templates/index.html:562
 msgid "alt describe lobby 1"
 msgstr ""
 
-#: templates/index.html:125 templates/index.html:388
+#: templates/index.html:128 templates/index.html:185 templates/index.html:446
+#: templates/index.html:554
 msgid "alt describe lobby 2"
 msgstr ""
 
-#: templates/index.html:131 templates/index.html:396
+#: templates/index.html:134 templates/index.html:140 templates/index.html:191
+#: templates/index.html:454 templates/index.html:462 templates/index.html:470
+#: templates/index.html:546
 msgid "alt describe lobby 3"
 msgstr ""
 
-#: templates/index.html:137 templates/index.html:422
-msgid "alt describe lobby 5"
-msgstr ""
-
-#: templates/index.html:143 templates/index.html:414
+#: templates/index.html:146 templates/index.html:488 templates/index.html:538
 msgid "alt describe lobby 4"
 msgstr ""
 
-#: templates/index.html:151
+#: templates/index.html:154
 msgid ""
 "\n"
-"                            <p>Window Cleaning is also very important ..."
-" </p>\n"
-"                            <p>Window Cleaning is also very important "
-"test text ... </p>\n"
+"                            <p>Window Cleaning is also very important ... "
+"</p>\n"
+"                            <p>Window Cleaning is also very important test "
+"text ... </p>\n"
 "                            "
 msgstr ""
+"\n"
+"                    <p>Window Cleaning</p>\n"
+"                    <p>Clean windows stand for neatness and guarantee a "
+"good view on your surroundings. We are experienced in cleaning any type of "
+"windows or roller shutters.</p>\n"
+"                    "
 
-#: templates/index.html:162
+#: templates/index.html:165
 msgid ""
 "\n"
 "                            <p>Stair houses are also part of our "
-"repertoire. We ensure that your stairwell is cleaned in such a way that "
-"it leaves a positive impression on customers and business partners.</p>\n"
+"repertoire. We ensure that your stairwell is cleaned in such a way that it "
+"leaves a positive impression on customers and business partners.</p>\n"
 "                            "
 msgstr ""
+"\n"
+"                    <p>Staircase Cleaning</p>\n"
+"                    <p>Staircases are also part of our repertoire. We make "
+"sure your staircase is clean in a way that it will leave a positive "
+"impression on your customers and business partners.</p>\n"
+"                    "
 
-#: templates/index.html:172
+#: templates/index.html:197 templates/index.html:496 templates/index.html:530
+msgid "alt describe lobby 5"
+msgstr ""
+
+#: templates/index.html:205
 msgid ""
 "\n"
 "                            <p>We clean your private apartment as "
-"conscientiously as if it were our own. We are also pleased to meet "
-"special requirements by appointment.</p>\n"
+"conscientiously as if it were our own. We are also pleased to meet special "
+"requirements by appointment.</p>\n"
 "                            "
 msgstr ""
+"\n"
+"                    <p>Apartment Cleaning</p>\n"
+"                    <p>We clean your apartment as conscientiously as if it "
+"was our own. We will gladly meet special requirements by agreement. </p>\n"
+"                    "
 
-#: templates/index.html:186 templates/index.html:430
-msgid "alt describe lobby 6"
-msgstr ""
-
-#: templates/index.html:192
-msgid "alt describe lobby 7"
-msgstr ""
-
-#: templates/index.html:198
-msgid "alt describe lobby 8"
-msgstr ""
-
-#: templates/index.html:204
-msgid "alt describe lobby 9"
-msgstr ""
-
-#: templates/index.html:210
-msgid "alt describe lobby 10"
-msgstr ""
-
-#: templates/index.html:218
+#: templates/index.html:215
 msgid ""
 "\n"
 "                            <p>Leave a shining impression with your "
@@ -163,85 +172,122 @@ msgid ""
 "our part to your sales success.</p>\n"
 "                            "
 msgstr ""
-
-#: templates/index.html:228
-msgid ""
 "\n"
-"                            <p>We offer a professional house maintenance,"
-" which leaves nothing to be desired.</p>\n"
-"                            <p> For example, we take care of plants and "
-"lawns, clean underground garages and also take care of the house "
-"technology.</p>\n"
-"                            "
+"                    <p>Commercial Area Cleaning</p>\n"
+"                    <p>Leave a sparkling impression on your customers: We "
+"contribute to your success by making your sales area shine.</p>\n"
+"                    "
+
+#: templates/index.html:229 templates/index.html:504 templates/index.html:512
+msgid "alt describe lobby 6"
 msgstr ""
 
-#: templates/index.html:239
+#: templates/index.html:235
+msgid "alt describe lobby 7"
+msgstr ""
+
+#: templates/index.html:241
+msgid "alt describe lobby 8"
+msgstr ""
+
+#: templates/index.html:247
+msgid "alt describe lobby 9"
+msgstr ""
+
+#: templates/index.html:253
+msgid "alt describe lobby 10"
+msgstr ""
+
+#: templates/index.html:261
+msgid ""
+"<p>We offer a professional house maintenance, which leaves nothing to be "
+"desired.</p><p> For example, we take care of plants and lawns, clean "
+"underground garages and also take care of the house technology.</p>"
+msgstr ""
+"                    <p>Property Maintenance</p>\n"
+"                    <p>We offer professional property maintenance that "
+"leaves nothing to be desired. For example, we take care of plants and lawn "
+"areas, clean parking areas and make sure the building services work as "
+"intended.</p>\n"
+"                    "
+
+#: templates/index.html:270
 msgid "Contact us"
-msgstr ""
+msgstr "Contact us"
 
-#: templates/index.html:246
+#: templates/index.html:281
 msgid ""
 "\n"
-"                                    <p>Have we piqued your interest? We "
-"are looking forward to your call\n"
-"                                        at 079 377 57 52 or your e-mail "
-"at b.arifi@aat-reinigung.ch.\n"
-"                                        You can also contact us via the "
-"contact form below, we will contact you\n"
-"                                        as soon as possible.\n"
-"                                    </p>\n"
-"                                    "
+"                                        <p>Have we piqued your interest? "
+"We are looking forward to your call\n"
+"                                            at 079 377 57 52 or your e-"
+"mail at b.arifi@aat-reinigung.ch.\n"
+"                                            You can also contact us via "
+"the contact form below, we will contact you\n"
+"                                            as soon as possible.\n"
+"                                        </p>\n"
+"                                        "
 msgstr ""
+"\n"
+"                            <p>Have we managed to spark your interest? We "
+"look forward to your\n"
+"                                call at 079 377 57 52 or your email to b."
+"arifi@aat-reinigung.ch.\n"
+"                                You can also contact us via the form "
+"below, we will get back to you\n"
+"                                as soon as possible.\n"
+"                            </p>\n"
+"                            "
 
-#: templates/index.html:260
+#: templates/index.html:295
 msgid "First Name / Second Name"
-msgstr ""
+msgstr "First name / second name"
 
-#: templates/index.html:264
+#: templates/index.html:299 templates/index.html:311 templates/index.html:323
 msgid "This field is required"
-msgstr ""
+msgstr "This field is required"
 
-#: templates/index.html:271
+#: templates/index.html:307
 msgid "e.g. email"
-msgstr ""
+msgstr "Your email address"
 
-#: templates/index.html:276
+#: templates/index.html:319
 msgid "e.g. phone number"
-msgstr ""
+msgstr "Your phone number"
 
-#: templates/index.html:280
+#: templates/index.html:329
 msgid "Submit"
+msgstr "Submit"
+
+#: templates/index.html:335
+msgid "Thank you for your message. We will contact you as soon as possible."
 msgstr ""
 
-#: templates/index.html:284
-msgid "Thank for you message, we will contact you as soon as possible"
-msgstr ""
-
-#: templates/index.html:293
+#: templates/index.html:345
 msgid "Call or Email us:"
-msgstr ""
+msgstr "Call us or write us an email:"
 
-#: templates/index.html:298
+#: templates/index.html:348 templates/index.html:352
 msgid "+410793775752"
-msgstr ""
+msgstr "+410793775752"
 
-#: templates/index.html:298
+#: templates/index.html:353
 msgid "079 377 57 52"
-msgstr ""
+msgstr "079 377 57 52"
 
-#: templates/index.html:302
+#: templates/index.html:358 templates/index.html:359
 msgid "b.arifi@aat-reinigung.ch"
-msgstr ""
+msgstr "b.arifi@aat-reinigung.ch"
 
-#: templates/index.html:311
+#: templates/index.html:369
 msgid "About us"
-msgstr ""
+msgstr "About us"
 
-#: templates/index.html:315 templates/index.html:330
+#: templates/index.html:373 templates/index.html:388
 msgid "Arifi family"
-msgstr ""
+msgstr "The Arifi family"
 
-#: templates/index.html:317
+#: templates/index.html:375
 msgid ""
 "\n"
 "                                    <p>The block about us describe Arifi "
@@ -251,31 +297,161 @@ msgid ""
 "family and information</p>\n"
 "                                    "
 msgstr ""
+"\n"
+"                            <p>The Arifi family has 15 years of experience "
+"in the area of cleaning and started their own business AAT Cleaning more "
+"than 3 years ago. </p>\n"
+"                            <p>We look forward to convince new customers "
+"from the quality of our services!</p>\n"
+"                            "
 
-#: templates/index.html:338 templates/index.html:344
+#: templates/index.html:396 templates/index.html:402
 msgid "Our area"
-msgstr ""
+msgstr "We work in the following regions"
 
-#: templates/index.html:345
+#: templates/index.html:403
 msgid "Baden"
-msgstr ""
+msgstr "Baden"
 
-#: templates/index.html:346
+#: templates/index.html:404
 msgid "Zurich"
-msgstr ""
+msgstr "Zurich"
 
-#: templates/index.html:347
+#: templates/index.html:405
 msgid "Aarau"
-msgstr ""
+msgstr "Aarau"
 
-#: templates/index.html:348
+#: templates/index.html:406
 msgid "Luzern"
-msgstr ""
+msgstr "Lucerne"
 
-#: templates/index.html:363
+#: templates/index.html:421
 msgid "Website copyright 2016"
-msgstr ""
+msgstr "Website Copyright 2016"
 
 #~ msgid ""
+#~ "\n"
+#~ "                    <p>The office cleaning ...</p>\n"
+#~ "                    <p>The buro is a place where many people have the "
+#~ "largest part of their lives ...</p>\n"
+#~ "                    "
 #~ msgstr ""
+#~ "\n"
+#~ "                    <p>Office Cleaning</p>\n"
+#~ "                    <p>An office is a place where many people spend the "
+#~ "largest part of their day. That’s why we think each office should meet "
+#~ "the highest cleanliness standards - it’s certainly more fun to work in "
+#~ "a clean place.</p>\n"
+#~ "                    "
 
+#~ msgid ""
+#~ "\n"
+#~ "                    <p>Window Cleaning is also very important ... </p>\n"
+#~ "                    <p>Window Cleaning is also very important test "
+#~ "text ... </p>\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    <p>Window Cleaning</p>\n"
+#~ "                    <p>Clean windows stand for neatness and guarantee a "
+#~ "good view on your surroundings. We are experienced in cleaning any type "
+#~ "of windows or roller shutters.</p>\n"
+#~ "                    "
+
+#~ msgid ""
+#~ "\n"
+#~ "                    <p>Stair houses are also part of our repertoire. We "
+#~ "ensure that your stairwell is cleaned in such a way that it leaves a "
+#~ "positive impression on customers and business partners.</p>\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    <p>Staircase Cleaning</p>\n"
+#~ "                    <p>Staircases are also part of our repertoire. We "
+#~ "make sure your staircase is clean in a way that it will leave a "
+#~ "positive impression on your customers and business partners.</p>\n"
+#~ "                    "
+
+#~ msgid ""
+#~ "\n"
+#~ "                    <p>We clean your private apartment as "
+#~ "conscientiously as if it were our own. We are also pleased to meet "
+#~ "special requirements by appointment.</p>\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    <p>Apartment Cleaning</p>\n"
+#~ "                    <p>We clean your apartment as conscientiously as if "
+#~ "it was our own. We will gladly meet special requirements by agreement. "
+#~ "</p>\n"
+#~ "                    "
+
+#~ msgid ""
+#~ "\n"
+#~ "                    <p>Leave a shining impression with your customers: "
+#~ "We bring your sales floor to a high gloss, thus contributing our part "
+#~ "to your sales success.</p>\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    <p>Commercial Area Cleaning</p>\n"
+#~ "                    <p>Leave a sparkling impression on your customers: "
+#~ "We contribute to your success by making your sales area shine.</p>\n"
+#~ "                    "
+
+#~ msgid ""
+#~ "\n"
+#~ "                    <p>We offer a professional house maintenance, which "
+#~ "leaves nothing to be desired.</p>\n"
+#~ "                    <p> For example, we take care of plants and lawns, "
+#~ "clean underground garages and also take care of the house technology.</"
+#~ "p>\n"
+#~ "                    "
+#~ msgstr ""
+#~ "\n"
+#~ "                    <p>Property Maintenance</p>\n"
+#~ "                    <p>We offer professional property maintenance that "
+#~ "leaves nothing to be desired. For example, we take care of plants and "
+#~ "lawn areas, clean parking areas and make sure the building services "
+#~ "work as intended.</p>\n"
+#~ "                    "
+
+#~ msgid ""
+#~ "\n"
+#~ "                            <p>Have we piqued your interest? We are "
+#~ "looking forward to your call\n"
+#~ "                                at 079 377 57 52 or your e-mail at b."
+#~ "arifi@aat-reinigung.ch.\n"
+#~ "                                You can also contact us via the contact "
+#~ "form below, we will contact you\n"
+#~ "                                as soon as possible.\n"
+#~ "                            </p>\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "                            <p>Have we managed to spark your interest? "
+#~ "We look forward to your\n"
+#~ "                                call at 079 377 57 52 or your email to "
+#~ "b.arifi@aat-reinigung.ch.\n"
+#~ "                                You can also contact us via the form "
+#~ "below, we will get back to you\n"
+#~ "                                as soon as possible.\n"
+#~ "                            </p>\n"
+#~ "                            "
+
+#~ msgid ""
+#~ "\n"
+#~ "                            <p>The block about us describe Arifi family "
+#~ "and information The block about us describe Arifi family and "
+#~ "information</p>\n"
+#~ "                            <p>The block about us describe Arifi family "
+#~ "and information</p>\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "                            <p>The Arifi family has 15 years of "
+#~ "experience in the area of cleaning and started their own business AAT "
+#~ "Cleaning more than 3 years ago. </p>\n"
+#~ "                            <p>We look forward to convince new "
+#~ "customers from the quality of our services!</p>\n"
+#~ "                            "

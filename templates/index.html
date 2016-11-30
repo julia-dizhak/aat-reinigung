@@ -258,10 +258,7 @@
                     <article class="item">
                         <h3 class="article-title">{{ _('House maintance') }}</h3>
                         <div class="description">
-                            {{ _('
-                            <p>We offer a professional house maintenance, which leaves nothing to be desired.</p>
-                            <p> For example, we take care of plants and lawns, clean underground garages and also take care of the house technology.</p>
-                            ') }}
+                            {{ _('<p>We offer a professional house maintenance, which leaves nothing to be desired.</p><p> For example, we take care of plants and lawns, clean underground garages and also take care of the house technology.</p>') }}
                         </div>
                     </article>
                 </section>
@@ -281,13 +278,13 @@
                             novalidate
                             ng-hide="formSent">
                                 <div class="description">
-                                        {{ _('
+                                        {% trans %}
                                         <p>Have we piqued your interest? We are looking forward to your call
                                             at 079 377 57 52 or your e-mail at b.arifi@aat-reinigung.ch.
                                             You can also contact us via the contact form below, we will contact you
                                             as soon as possible.
                                         </p>
-                                        ')}}
+                                        {% endtrans %}
                                 </div>
                                 <div class="field">
                                     <input
@@ -295,7 +292,7 @@
                                         type="text"
                                         name="name"
                                         ng-model="request.name"
-                                        placeholder="{{ _('First Name / Second Name') }}"
+                                        placeholder="{% trans %}First Name / Second Name{% endtrans %}"
                                         required>
                                     <div ng-cloak
                                          class="error"
